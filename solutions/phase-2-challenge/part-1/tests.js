@@ -68,4 +68,10 @@ describe('filterBetween()', () => {
     expect(filterBetween(arr, 3, 6)).to.deep.equal([3, 4, 5, 6])
     expect(filterBetween(arr, 5, 10)).to.deep.equal([5, 6, 7])
   })
+
+  it('returns an empty array if no elements are within min and max', () => {
+    let arr = [4, 5, 6, 7]
+
+    expect(filterBetween(arr, 1, 3)).to.deep.equal([])
+  })
 })
