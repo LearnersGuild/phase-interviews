@@ -23,3 +23,15 @@ describe('weekday()', () => {
     }).to.throw(TypeError)
   })
 })
+
+describe('snippet()', () => {
+  it('shortens a string to `maxlength` and adds an ellipsis', () => {
+    const str = "For the following exercises,"
+    expect(snippet(str, 10)).to.equal("For the fo…")
+  })
+
+  it('returns unmodified string if shorter than `maxlength`', () => {
+    const str = "Hello, world!"
+    expect(snippet(str, 20)).to.equal(str)
+  })
+})

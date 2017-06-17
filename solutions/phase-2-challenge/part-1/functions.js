@@ -9,7 +9,10 @@ function weekday(date) {
 }
 
 function snippet(string, maxlength) {
+  if (string.length <= maxlength)
+    return string
 
+  return string.slice(0, maxlength) + '…'
 }
 
 function numProps(obj) {
