@@ -19,6 +19,9 @@ function snippet(string, maxlength) {
 }
 
 function numProps(obj) {
+  if (typeof obj !== 'object')
+    throw 'argument must be an object'
+
   return Object.getOwnPropertyNames(obj).length
 }
 

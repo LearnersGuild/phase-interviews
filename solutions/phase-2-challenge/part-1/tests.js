@@ -53,4 +53,10 @@ describe('numProps()', () => {
     expect(numProps(friend)).to.equal(3)
     expect(numProps({})).to.equal(0)
   })
+
+  it('requires that the argument is an object', () => {
+    expect(() => {
+      numProps(2)
+    }).to.throw('argument must be an object')
+  })
 })
