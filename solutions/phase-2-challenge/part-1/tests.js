@@ -16,4 +16,10 @@ describe('weekday()', () => {
     expect(weekday(mon)).to.equal("Mon")
     expect(weekday(thu)).to.equal("Thu")
   })
+
+  it('requires a date object as input', () => {
+    expect(() => {
+      weekday("monday")
+    }).to.throw(TypeError)
+  })
 })
