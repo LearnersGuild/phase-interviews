@@ -17,5 +17,5 @@ function searchByName(name) {
 
 const name = process.argv[2]
 
-console.log('Finding clients with name "Ad"...', '\n')
+console.log(`Finding clients with name "${name}"...`, '\n')
 console.log(searchByName(name))
