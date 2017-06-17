@@ -26,7 +26,7 @@ function numProps(obj) {
 }
 
 function filterBetween(array, min, max) {
-
+  return array.filter((elem) => elem >= min && elem <= max)
 }
 
 module.exports = {

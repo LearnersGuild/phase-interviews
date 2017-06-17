@@ -60,3 +60,12 @@ describe('numProps()', () => {
     }).to.throw('argument must be an object')
   })
 })
+
+describe('filterBetween()', () => {
+  it('returns a new array with elements e that meet `min` >= e <= `max`', () => {
+    let arr = [1, 2, 3, 4, 5, 6, 7]
+
+    expect(filterBetween(arr, 3, 6)).to.deep.equal([3, 4, 5, 6])
+    expect(filterBetween(arr, 5, 10)).to.deep.equal([5, 6, 7])
+  })
+})
