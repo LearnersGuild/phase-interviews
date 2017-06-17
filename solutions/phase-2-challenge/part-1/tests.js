@@ -41,3 +41,16 @@ describe('snippet()', () => {
     }).to.throw('missing argument maxlength')
   })
 })
+
+describe('numProps()', () => {
+  it('returns the number of properties an object has', () => {
+    const friend = {
+      name: 'Dominique',
+      age: 30,
+      phone: '555-555-5555'
+    }
+
+    expect(numProps(friend)).to.equal(3)
+    expect(numProps({})).to.equal(0)
+  })
+})
