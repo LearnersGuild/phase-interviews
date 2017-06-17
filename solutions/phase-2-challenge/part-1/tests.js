@@ -34,4 +34,10 @@ describe('snippet()', () => {
     const str = "Hello, world!"
     expect(snippet(str, 20)).to.equal(str)
   })
+
+  it('requires the `maxlength` argument', () => {
+    expect(() => {
+      snippet('Foo')
+    }).to.throw('missing argument maxlength')
+  })
 })

@@ -9,6 +9,9 @@ function weekday(date) {
 }
 
 function snippet(string, maxlength) {
+  if (maxlength === undefined)
+    throw 'missing argument maxlength'
+
   if (string.length <= maxlength)
     return string
 
