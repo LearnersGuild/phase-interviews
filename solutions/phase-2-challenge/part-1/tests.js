@@ -10,7 +10,10 @@ const expect = chai.expect
 
 describe('weekday()', () => {
   it('returns the three-letter day of week for date object', () => {
-    let date = new Date(2017, 6, 19) // June 19, 2017
-    expect(weekday(date)).to.equal("Mon")
+    let mon = new Date(2017, 5, 19) // June 19, 2017
+    let thu = new Date(2017, 5, 15) // June 15, 2017
+
+    expect(weekday(mon)).to.equal("Mon")
+    expect(weekday(thu)).to.equal("Thu")
   })
 })
