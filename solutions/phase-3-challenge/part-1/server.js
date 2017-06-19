@@ -11,7 +11,6 @@ app.get('/add', (req, res) => {
   res.send(String(result))
 })
 
-
 app.get('/subtract', (req, res) => {
   const {a, b} = req.query
   const result = Number(a) - Number(b)
