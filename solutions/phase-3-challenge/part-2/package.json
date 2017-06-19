@@ -7,7 +7,8 @@
   "scripts": {
     "db:create": "createdb grocery_store",
     "db:drop": "dropdb grocery_store",
-    "db:schema": "psql -d grocery_store -f schema.sql"
+    "db:schema": "psql -d grocery_store -f schema.sql",
+    "db:seed": "psql -d grocery_store -f load-data.sql"
   },
   "author": "Tanner Welsh"
 }
