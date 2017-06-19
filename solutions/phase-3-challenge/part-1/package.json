@@ -5,9 +5,12 @@
   "dependencies": {
     "express": "^4.15.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
   },
   "author": "Tanner Welsh"
 }
