@@ -1,0 +1,13 @@
+{
+  "name": "part-2",
+  "version": "1.0.0",
+  "main": "database.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "db:create": "createdb grocery_store",
+    "db:drop": "dropdb grocery_store",
+    "db:schema": "psql -d grocery_store -f schema.sql"
+  },
+  "author": "Tanner Welsh"
+}
