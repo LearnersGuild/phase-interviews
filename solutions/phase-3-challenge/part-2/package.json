@@ -2,7 +2,9 @@
   "name": "part-2",
   "version": "1.0.0",
   "main": "database.js",
-  "dependencies": {},
+  "dependencies": {
+    "pg-promise": "^5.9.3"
+  },
   "devDependencies": {},
   "scripts": {
     "db:create": "createdb grocery_store",
