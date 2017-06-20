@@ -1,5 +1,5 @@
 -- Import items from CSV
-COPY items(name, price, section)
+COPY items(id, name, price, section)
 FROM '/Users/tanner/LearnersGuild/phase-interviews/solutions/phase-3-challenge/part-2/seed-data/items.csv'
 WITH (FORMAT 'csv', HEADER);
 
