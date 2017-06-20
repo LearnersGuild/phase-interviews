@@ -41,6 +41,7 @@ const ELEMENTS = {
   addToCartBtns: () => document.querySelectorAll('.js-add-to-cart'),
   cartModalContainer: () => document.querySelector('.modal-container'),
   cartModalCloseBtn: () => document.querySelector('#modal-close-button'),
+  clearCartBtn: () => document.querySelector('#clear-cart-button'),
   cartItems: () => document.querySelector('#cart-items'),
   cartTotal: () => document.querySelector('#cart-total')
 }
@@ -70,7 +71,7 @@ const ACTIONS = {
     modalContainer.style.display = 'inherit'
     modalContainer.style.visibility = 'visible'
 
-    ELEMENTS.cartItems().innerHTML = Cart.render()
+    ACTIONS.renderCartItems()
     updateCartTotal()
   },
 
@@ -81,6 +82,19 @@ const ACTIONS = {
 
     modalContainer.style.display = 'none'
     modalContainer.style.visibility = 'hidden'
+  },
+
+  renderCartItems: function() {
+    ELEMENTS.cartItems().innerHTML = Cart.render()
+  },
+
+  clearCart: function(e) {
+    e.preventDefault()
+
+    Cart.clear()
+    ACTIONS.renderCartItems()
+    updateCartTotal()
+    updateItemCount()
   }
 }
 
@@ -96,6 +110,8 @@ function initializeListeners() {
   ELEMENTS.addToCartBtns().forEach((button) => {
     button.addEventListener('click', ACTIONS.addItemToCart)
   })
+
+  ELEMENTS.clearCartBtn().addEventListener('click', ACTIONS.clearCart)
 
   ELEMENTS.cartBtn().addEventListener('click', ACTIONS.showCartModal)
   ELEMENTS.cartModalCloseBtn().addEventListener('click', ACTIONS.hideCartModal)
