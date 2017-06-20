@@ -40,7 +40,9 @@ describe('cheapItems()', () => {
 
 describe('countItemsInSection()', () => {
   it('gets the count of all items in the given section', (done) => {
-    // `countItemsInSection("packaged")` returns `5`
-    done()
+    countItemsInSection('packaged').then((results) => {
+      expect(Number(results.count)).to.equal(5)
+      done()
+    }).catch(console.error)
   })
 })
