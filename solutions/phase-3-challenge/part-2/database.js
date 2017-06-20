@@ -67,6 +67,16 @@ function orderTotal(orderID) {
   return db.oneOrNone(queryString, orderID)
 }
 
+module.exports = {
+  allItems,
+  itemsInSection,
+  cheapItems,
+  countItemsInSection,
+  mostRecentOrders,
+  lastShopperName,
+  orderTotal
+}
+
 if (!module.parent) {
   const showResults = (funcCall) => {
     return (results) => {
