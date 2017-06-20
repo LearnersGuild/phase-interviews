@@ -10,8 +10,13 @@ const {
 
 describe('itemsInSection()', () => {
   it('gets the ids and names of items in the given section', (done) => {
-    // `itemsInSection("bulk")` returns the items `"Flour"`, `"Pasta"`, and `"Rice"`
-    done()
+    itemsInSection('bulk').then((results) => {
+      const names = results.map((item) => item.name)
+
+      expect(results[0]).to.have.all.keys('id', 'name')
+      expect(names.sort()).to.deep.equal(['Flour', 'Pasta', 'Rice'].sort())
+      done()
+    }).catch(console.error)
   })
 })
 
