@@ -12,12 +12,17 @@ const Cart = {
     Cart.items = []
     return Cart
   },
+  total: () => {
+    let sum = ( acc, price ) => acc + price
+    let prices = Cart.items.map((item) => item.price * 100)
+    return prices.reduce(sum, 0.0) / 100
+  },
   render: () => {
     const cartItemsHTML = Cart.items.map((item) => {
       return `
         <li class="item flex flex-row-between">
           <span class="item-name">${item.name}</span>
-          <span class="item-price">${item.price}</span>
+          <span class="item-price">$${item.price}</span>
         </li>
       `
     }).join("\n")
@@ -36,7 +41,8 @@ const ELEMENTS = {
   addToCartBtns: () => document.querySelectorAll('.js-add-to-cart'),
   cartModalContainer: () => document.querySelector('.modal-container'),
   cartModalCloseBtn: () => document.querySelector('#modal-close-button'),
-  cartItems: () => document.querySelector('#cart-items')
+  cartItems: () => document.querySelector('#cart-items'),
+  cartTotal: () => document.querySelector('#cart-total')
 }
 
 const ACTIONS = {
@@ -47,7 +53,8 @@ const ACTIONS = {
     const itemElem = buttonElem.parentElement
 
     const name = itemElem.querySelector('.item-name').innerText
-    const price = itemElem.querySelector('.item-price').innerText
+    const priceText = itemElem.querySelector('.item-price').innerText
+    const price = parseFloat(priceText.match(/\d+\.\d+/)[0])
 
     const item = { name, price }
 
@@ -64,6 +71,7 @@ const ACTIONS = {
     modalContainer.style.visibility = 'visible'
 
     ELEMENTS.cartItems().innerHTML = Cart.render()
+    updateCartTotal()
   },
 
   hideCartModal: function(e) {
@@ -78,6 +86,10 @@ const ACTIONS = {
 
 function updateItemCount() {
   ELEMENTS.cartCount().innerText = `(${Cart.count()})`
+}
+
+function updateCartTotal() {
+  ELEMENTS.cartTotal().innerText = `$${Cart.total()}`
 }
 
 function initializeListeners() {
