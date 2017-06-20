@@ -7,6 +7,8 @@ const {
   countItemsInSection
 } = require('./database.js')
 
+// Note: the following tests assume that the data being tested is
+// the same as that in seed-data/items.csv
 
 describe('itemsInSection()', () => {
   it('gets the ids and names of items in the given section', (done) => {
@@ -22,8 +24,17 @@ describe('itemsInSection()', () => {
 
 describe('cheapItems()', () => {
   it('gets all items that cost less than $10.00, ordered from lowest to highest price', (done) => {
-    // `cheapItems()` returns the item `"Fish"` as the first item and `"Honey"` as the last item
-    done()
+    cheapItems().then((results) => {
+      const fishID = 15   // fish is the cheapest item ($0.49)
+      const honeyID = 22  // honey is closest to $10.00 (but still cheaper at $9.31)
+
+      const firstItem = results[0]
+      const lastItem = results[results.length - 1]
+
+      expect(firstItem.id).to.equal(fishID)
+      expect(lastItem.id).to.equal(honeyID)
+      done()
+    }).catch(console.error)
   })
 })
 
