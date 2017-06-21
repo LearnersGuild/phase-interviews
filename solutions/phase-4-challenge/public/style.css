@@ -1,0 +1,41 @@
+.navbar {
+  border-radius: 0px;
+}
+
+.jumbotron {
+  margin-top: -20px;
+  background-image: url('/records.jpeg');
+  background-size: cover;
+  background-position: 0px -150px;
+  height: 175px;
+}
+
+dl.albums dd {
+  padding-bottom: 11px;
+}
+
+.profile .dl-horizontal dt {
+  text-align: left;
+  width: 100px;
+}
+
+.album-review {
+  padding-bottom: 30px;
+}
+
+.album-review a.title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.album-review .review-date {
+  font-size: 0.9em;
+}
+
+.album-review a.delete-review {
+  margin-left: 6px;
+}
+
+.album-review .glyphicon-trash {
+  font-size: 1.2em;
+}

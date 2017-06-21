@@ -1,0 +1,23 @@
+extends ../layouts/layout
+
+include ../reviews/_review.pug
+
+block title
+  title Vinyl : #{album.title}
+
+block content
+  h1= album.title
+  em by #{album.artist}
+
+  h2 Reviews
+    if user
+      span.pull-right 
+        a.btn.btn-default(href=`/albums/${album.id}/add-review`) Add review
+
+  each review in album.reviews
+    +albumReview(review)
+  else
+    .row
+      .col-sm-12
+        p There are no reviews for this album.
+        

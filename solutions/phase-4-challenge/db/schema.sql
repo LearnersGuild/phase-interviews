@@ -1,0 +1,24 @@
+DROP TABLE IF EXISTS albums;
+CREATE TABLE albums (
+  id SERIAL,
+  title VARCHAR(255) NOT NULL,
+  artist VARCHAR(255) NOT NULL
+);
+
+DROP TABLE IF EXISTS users;
+CREATE TABLE users (
+  id SERIAL,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  joined_at TIMESTAMP DEFAULT now()
+);
+
+DROP TABLE IF EXISTS reviews;
+CREATE TABLE reviews (
+  id SERIAL,
+  user_id INTEGER NOT NULL,
+  album_id INTEGER NOT NULL,
+  content TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT now()
+);

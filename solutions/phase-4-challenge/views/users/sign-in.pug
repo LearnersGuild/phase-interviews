@@ -1,0 +1,23 @@
+extends ../layouts/layout_plain
+
+block title
+  title Sign In
+
+block content
+  .row
+    h1.text-center Sign In
+
+  form.form-horizontal(method='post' action='/users/sign-in')
+    .form-group
+      label.col-sm-offset-3.col-sm-2.control-label(for='email') Email
+      .col-sm-3
+        input.form-control(id='email' name='email' type='text' placeholder='Email')
+
+    .form-group
+      label.col-sm-offset-3.col-sm-2.control-label(for='password') Password
+      .col-sm-3
+        input.form-control(id='password' name='password' type='password' placeholder='Password')
+
+    .form-group
+      .col-sm-offset-5.col-sm-2
+        button(type='submit' class='btn btn-default') Sign In

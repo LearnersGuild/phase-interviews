@@ -1,0 +1,18 @@
+mixin albumReview(review)
+  .album-review
+    .row
+      .col-sm-6
+        a.title(href=`/albums/${review.album_id}`)= review.album_title
+
+      .col-sm-6.text-right.review-date= new Date( review.created_at ).toLocaleDateString()
+        if( user && review.reviewer_id === user.id ) 
+          a.pull-right.delete-review(href=`/reviews/${review.id}/delete`)
+            span.glyphicon.glyphicon-trash(aria-hidden='true' data-id=review.id)
+
+    .row
+      .col-sm-12= review.content
+    
+    if( user && review.reviewer_id !== user.id ) 
+      .row
+        .col-sm-offset-6.col-sm-6.text-right by&nbsp;
+          a(href=`/users/${review.reviewer_id}`)= review.reviewer_name
