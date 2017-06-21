@@ -60,7 +60,34 @@ const ACTIONS = {
     const item = { name, price }
 
     Cart.addItem(item)
-    updateItemCount()
+    UI.refresh()
+  },
+
+  clearCart: function(e) {
+    e.preventDefault()
+
+    Cart.clear()
+    UI.refresh()
+  },
+}
+
+const UI = {
+  refresh: function() {
+    UI.updateItemCount()
+    UI.updateCartItems()
+    UI.updateCartTotal()
+  },
+
+  updateItemCount: function() {
+    ELEMENTS.cartCount().innerText = `(${Cart.count()})`
+  },
+
+  updateCartItems: function() {
+    ELEMENTS.cartItems().innerHTML = Cart.render()
+  },
+
+  updateCartTotal: function() {
+    ELEMENTS.cartTotal().innerText = `$${Cart.total()}`
   },
 
   showCartModal: function(e) {
@@ -70,9 +97,6 @@ const ACTIONS = {
 
     modalContainer.style.display = 'inherit'
     modalContainer.style.visibility = 'visible'
-
-    ACTIONS.renderCartItems()
-    updateCartTotal()
   },
 
   hideCartModal: function(e) {
@@ -83,38 +107,14 @@ const ACTIONS = {
     modalContainer.style.display = 'none'
     modalContainer.style.visibility = 'hidden'
   },
-
-  renderCartItems: function() {
-    ELEMENTS.cartItems().innerHTML = Cart.render()
-  },
-
-  clearCart: function(e) {
-    e.preventDefault()
-
-    Cart.clear()
-    ACTIONS.renderCartItems()
-    updateCartTotal()
-    updateItemCount()
-  }
 }
 
-function updateItemCount() {
-  ELEMENTS.cartCount().innerText = `(${Cart.count()})`
-}
+// Load all app events
+ELEMENTS.addToCartBtns().forEach((button) => {
+  button.addEventListener('click', ACTIONS.addItemToCart)
+})
 
-function updateCartTotal() {
-  ELEMENTS.cartTotal().innerText = `$${Cart.total()}`
-}
+ELEMENTS.clearCartBtn().addEventListener('click', ACTIONS.clearCart)
 
-function initializeListeners() {
-  ELEMENTS.addToCartBtns().forEach((button) => {
-    button.addEventListener('click', ACTIONS.addItemToCart)
-  })
-
-  ELEMENTS.clearCartBtn().addEventListener('click', ACTIONS.clearCart)
-
-  ELEMENTS.cartBtn().addEventListener('click', ACTIONS.showCartModal)
-  ELEMENTS.cartModalCloseBtn().addEventListener('click', ACTIONS.hideCartModal)
-}
-
-initializeListeners()
+ELEMENTS.cartBtn().addEventListener('click', UI.showCartModal)
+ELEMENTS.cartModalCloseBtn().addEventListener('click', UI.hideCartModal)
