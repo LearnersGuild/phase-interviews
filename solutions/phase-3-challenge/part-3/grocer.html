@@ -9,9 +9,9 @@
   <body class="flex flex-column">
     <header class="site-header flex flex-row-between">
       <h1>Grocer</h1>
-      <button type="button" id="cart-button">
+      <button type="button" class="js-modal-open">
         Cart
-        &nbsp;<span id="cart-item-count">(0)</span>
+        &nbsp;<span class="js-cart-count">(0)</span>
       </button>
     </header>
 
@@ -79,19 +79,19 @@
       <div class="modal">
         <div class="modal-header flex flex-row-between">
           <h2>Cart</h2>
-          <button type="button" id="modal-close-button">X</button>
+          <button type="button" class="js-modal-close">X</button>
         </div>
 
-        <div id="cart-items">
+        <div class="js-cart-items">
           <!-- Dynamically rendered -->
           <p>No items in cart.</p>
         </div>
 
         <div class="modal-footer flex flex-row-between">
-          <button type="button" id="clear-cart-button">Clear</button>
+          <button type="button" class="js-clear-cart">Clear</button>
           <strong>
             <label for="cart-total">Total</label>
-            <span name="cart-total" id="cart-total">$0.00</span>
+            <span name="cart-total" class="js-cart-total">$0.00</span>
           </strong>
         </div>
       </div>

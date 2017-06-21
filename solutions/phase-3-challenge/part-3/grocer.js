@@ -1,41 +1,28 @@
-// Cart data store
+// Manage cart state, and wrap
 const Cart = {
   items: [],
-  count: () => {
-    return Cart.items.length
-  },
+
+  count: () => Cart.items.length,
+
   addItem: (item) => {
     Cart.items.push(item)
     return Cart
   },
+
   clear: () => {
     Cart.items = []
     return Cart
   },
+
   total: () => {
-    let sum = ( acc, price ) => acc + price
-    let prices = Cart.items.map((item) => item.price * 100)
+    const sum = (acc, price) => acc + price
+    const prices = Cart.items.map((item) => item.price * 100)
     return prices.reduce(sum, 0.0) / 100
   },
-  render: () => {
-    const cartItemsHTML = Cart.items.map((item) => {
-      return `
-        <li class="item flex flex-row-between">
-          <span class="item-name">${item.name}</span>
-          <span class="item-price">$${item.price}</span>
-        </li>
-      `
-    }).join("\n")
-
-    return `
-      <ul class="item-section">
-        ${cartItemsHTML}
-      </ul>
-    `
-  }
 }
 
-const parseItem = function(itemElem) {
+// Utility function to parse item data from the element
+const parseItem = (itemElem) => {
   const name = itemElem.querySelector('.item-name').innerText
   const priceText = itemElem.querySelector('.item-price').innerText
   const price = parseFloat(priceText.match(/\d+\.\d+/)[0])
@@ -43,17 +30,7 @@ const parseItem = function(itemElem) {
   return { name, price }
 }
 
-const ELEMENTS = {
-  cartBtn: () => document.querySelector('#cart-button'),
-  cartCount: () => document.querySelector('#cart-item-count'),
-  addToCartBtns: () => document.querySelectorAll('.js-add-to-cart'),
-  cartModalContainer: () => document.querySelector('.modal-container'),
-  cartModalCloseBtn: () => document.querySelector('#modal-close-button'),
-  clearCartBtn: () => document.querySelector('#clear-cart-button'),
-  cartItems: () => document.querySelector('#cart-items'),
-  cartTotal: () => document.querySelector('#cart-total')
-}
-
+// Primary user actions
 const ACTIONS = {
   addItemToCart: function(e) {
     e.preventDefault()
@@ -75,50 +52,81 @@ const ACTIONS = {
   },
 }
 
+// Main interactive elements
+const ELEMENTS = {
+  modalContainer: () => document.querySelector('.modal-container'),
+
+  modalCloseBtn: () => document.querySelector('.js-modal-close'),
+  modalOpenBtn: () => document.querySelector('.js-modal-open'),
+
+  addToCartBtns: () => document.querySelectorAll('.js-add-to-cart'),
+  clearCartBtn: () => document.querySelector('.js-clear-cart'),
+
+  cartCount: () => document.querySelector('.js-cart-count'),
+  cartItems: () => document.querySelector('.js-cart-items'),
+  cartTotal: () => document.querySelector('.js-cart-total'),
+}
+
+// User interface
 const UI = {
-  refresh: function() {
-    UI.updateItemCount()
-    UI.updateCartItems()
-    UI.updateCartTotal()
+  refresh: () => {
+    UI.renderCartCount()
+    UI.renderCartItems()
+    UI.renderCartTotal()
   },
 
-  updateItemCount: function() {
+  renderCartCount: () => {
     ELEMENTS.cartCount().innerText = `(${Cart.count()})`
   },
 
-  updateCartItems: function() {
-    ELEMENTS.cartItems().innerHTML = Cart.render()
+  renderCartItems: () => {
+    const items = Cart.items.map((item) => {
+      return `
+        <li class="item flex flex-row-between">
+          <span class="item-name">${item.name}</span>
+          <span class="item-price">$${item.price}</span>
+        </li>
+      `
+    }).join("\n")
+
+    const itemsList = `
+      <ul class="item-section">
+        ${items}
+      </ul>
+    `
+
+    ELEMENTS.cartItems().innerHTML = itemsList
   },
 
-  updateCartTotal: function() {
+  renderCartTotal: () => {
     ELEMENTS.cartTotal().innerText = `$${Cart.total()}`
   },
 
-  showCartModal: function(e) {
+  showModal: function(e) {
     e.preventDefault()
 
-    const modalContainer = ELEMENTS.cartModalContainer()
+    const modalContainer = ELEMENTS.modalContainer()
 
     modalContainer.style.display = 'inherit'
     modalContainer.style.visibility = 'visible'
   },
 
-  hideCartModal: function(e) {
+  hideModal: function(e) {
     e.preventDefault()
 
-    const modalContainer = ELEMENTS.cartModalContainer()
+    const modalContainer = ELEMENTS.modalContainer()
 
     modalContainer.style.display = 'none'
     modalContainer.style.visibility = 'hidden'
   },
 }
 
-// Load all app events
-ELEMENTS.addToCartBtns().forEach((button) => {
-  button.addEventListener('click', ACTIONS.addItemToCart)
+// Load all app event listeners
+ELEMENTS.addToCartBtns().forEach((btn) => {
+  btn.addEventListener('click', ACTIONS.addItemToCart)
 })
 
 ELEMENTS.clearCartBtn().addEventListener('click', ACTIONS.clearCart)
 
-ELEMENTS.cartBtn().addEventListener('click', UI.showCartModal)
-ELEMENTS.cartModalCloseBtn().addEventListener('click', UI.hideCartModal)
+ELEMENTS.modalOpenBtn().addEventListener('click', UI.showModal)
+ELEMENTS.modalCloseBtn().addEventListener('click', UI.hideModal)
