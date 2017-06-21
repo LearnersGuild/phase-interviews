@@ -1,0 +1,42 @@
+id,name,price,section
+1,Aluminum Foil,8.84,miscellaneous
+2,Apples,10.81,produce
+3,Bacon,9.01,meat
+4,Bagles,10.67,bread
+5,Baguette/French Bread,5.01,bread
+6,Barbeque Sauce,16.96,packaged
+7,Butter,4.29,dairy
+8,Carrots,2.88,produce
+9,Cheese,1.75,dairy
+10,Coffee,6.17,packaged
+11,Cold Cuts,1.47,deli
+12,Cream Cheese,16.11,dairy
+13,Croissants,6.36,bread
+14,Eggs,2.66,dairy
+15,Fish,0.49,meat
+16,Flour,8.74,bulk
+17,Fruit,8.87,produce
+18,Grapes,8.78,produce
+19,Green Beans,7.86,produce
+20,Ground Beef,16.03,meat
+21,Ham,13.27,meat
+22,Honey,9.31,packaged
+23,Ice Cream,14.08,frozen
+24,Ketchup,2.94,packaged
+25,Lemons,17.24,produce
+26,Lettuce,16.28,produce
+27,Milk,2.34,dairy
+28,Mushrooms,16.68,produce
+29,Oil,5.25,packaged
+30,Onions,1.11,produce
+31,Orange Juice,2.52,frozen
+32,Oranges,3.40,produce
+33,Pasta,13.39,bulk
+34,Pizza,16.61,frozen
+35,Potatoes,13.29,produce
+36,Rice,5.23,bulk
+37,Salami,12.70,meat
+38,Soda,11.21,miscellaneous
+39,Sour Cream,1.73,dairy
+40,Tomatoes,1.56,produce
+41,Yogurt,18.67,dairy

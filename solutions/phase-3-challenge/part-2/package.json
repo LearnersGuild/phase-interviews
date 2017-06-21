@@ -1,0 +1,20 @@
+{
+  "name": "part-2",
+  "version": "1.0.0",
+  "main": "database.js",
+  "dependencies": {
+    "chai": "^4.0.2",
+    "pg-promise": "^5.9.3"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  },
+  "scripts": {
+    "db:create": "createdb grocery_store",
+    "db:drop": "dropdb grocery_store",
+    "db:schema": "psql -d grocery_store -f schema.sql",
+    "db:seed": "psql -d grocery_store -f load-data.sql",
+    "test": "mocha database_test.js"
+  },
+  "author": "Tanner Welsh"
+}
