@@ -35,6 +35,14 @@ const Cart = {
   }
 }
 
+const parseItem = function(itemElem) {
+  const name = itemElem.querySelector('.item-name').innerText
+  const priceText = itemElem.querySelector('.item-price').innerText
+  const price = parseFloat(priceText.match(/\d+\.\d+/)[0])
+
+  return { name, price }
+}
+
 const ELEMENTS = {
   cartBtn: () => document.querySelector('#cart-button'),
   cartCount: () => document.querySelector('#cart-item-count'),
@@ -53,11 +61,7 @@ const ACTIONS = {
     const buttonElem = this
     const itemElem = buttonElem.parentElement
 
-    const name = itemElem.querySelector('.item-name').innerText
-    const priceText = itemElem.querySelector('.item-price').innerText
-    const price = parseFloat(priceText.match(/\d+\.\d+/)[0])
-
-    const item = { name, price }
+    const item = parseItem(itemElem)
 
     Cart.addItem(item)
     UI.refresh()
