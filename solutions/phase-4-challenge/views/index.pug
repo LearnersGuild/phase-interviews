@@ -1,0 +1,29 @@
+extends ./layouts/layout
+
+include ./reviews/_review.pug
+
+block title
+  title Home Page
+
+block preamble
+  .jumbotron &nbsp;
+
+block content
+  .row
+    .col-sm-3
+      h2 Records
+
+      dl.albums
+        each album in albums
+          dt
+            a.title(href=`/albums/${album.id}`)= album.title
+          dd
+            span.artist= album.artist
+
+    .col-sm-offset-1.col-sm-8
+      h2 Recent Reviews
+
+      each review in reviews
+        +albumReview(review)
+      else
+        p There are no reviews.

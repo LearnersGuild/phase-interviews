@@ -1,0 +1,16 @@
+extends ../layouts/layout
+
+block title
+  title New Review
+
+block content
+  .row
+    h1.text-center New review for #{album.title}
+
+  form.form(method='post' action=`/albums/${album.id}/add-review`)
+    .form-group.col-sm-offset-3.col-sm-6
+      textarea.form-control(rows=8 name='content')
+
+    .form-group
+      .col-sm-offset-7.col-sm-2
+        button(type='submit' class='btn btn-default') Submit
