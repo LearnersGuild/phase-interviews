@@ -4,8 +4,10 @@ Phase interview resources & solutions.
 
 ## Challenges
 
-Coding challenge gists (to give to learners at start of interview):
+Coding challenge gists/quizzes (to give to learners at start of interview):
 
+- P1:
+    - Aug/Sep quiz & coding challenge: https://www.hackerrank.com/x/tests/151066/questions
 - P2: 
   - Version A: https://gist.github.com/lg-bot/b5fd15cbc3c6b454055916815b2fdea6
   - Version B: https://gist.github.com/lg-bot/7832b0582f86e9bf4699c1cd633b8794
