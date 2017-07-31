@@ -18,6 +18,8 @@ Coding challenge gists/quizzes (to give to learners at start of interview):
 
 ## Evaluations
 
+To calculate completion scores, you may want to use the [Challenge Evaluation Calculator](https://github.com/LearnersGuild/challenge-evaluation-calculator) extension for Chrome.
+
 There are separate interview outcome forms that must be submitted for each phase (necessary for good data tracking in HubSpot!) Please make sure you’re submitting the correct form for the phase interview you’re conducting:
 
 - Phase 1 IV Outcome: http://hs.learnersguild.org/phase-1-interview-outcome / pw = "theguildphase1"
