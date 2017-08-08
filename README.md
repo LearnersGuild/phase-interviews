@@ -8,7 +8,13 @@ Coding challenge gists/quizzes (to give to learners at start of interview):
 
 - P1:
     - Aug/Sep quiz & coding challenge: https://www.hackerrank.com/x/tests/151066/questions
-- P2: 
+    - Oct (and beyond) quiz & coding challenge:
+      - internal link: https://www.hackerrank.com/x/tests/all/159765/
+      - learner-facing link: http://hr.gs/lg-phase-1-challenge (pw: `guildphase1`)
+- Week 4 Progress Check:
+  - internal link: https://www.hackerrank.com/x/tests/158458/
+  - learner-facing link: http://hr.gs/lg-week-4-prog-check (pw: `guildpgck`)
+- P2:
   - Version A: https://gist.github.com/lg-bot/b5fd15cbc3c6b454055916815b2fdea6
   - Version B: https://gist.github.com/lg-bot/7832b0582f86e9bf4699c1cd633b8794
 - P3:
