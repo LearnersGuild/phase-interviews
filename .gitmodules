@@ -1,0 +1,15 @@
+[submodule "phase-2/version-a"]
+	path = phase-2/version-a
+	url = https://gist.github.com/lg-bot/b5fd15cbc3c6b454055916815b2fdea6
+[submodule "phase-2/version-b"]
+	path = phase-2/version-b
+	url = https://gist.github.com/lg-bot/7832b0582f86e9bf4699c1cd633b8794
+[submodule "phase-3/version-a"]
+	path = phase-3/version-a
+	url = https://gist.github.com/lg-bot/1be9e9b91fc0f972b74b72df34c99d3d
+[submodule "phase-3/version-b"]
+	path = phase-3/version-b
+	url = https://gist.github.com/lg-bot/6c222924ee58adc43cc1ac600987b38e
+[submodule "phase-4/version-a"]
+	path = phase-4/version-a
+	url = https://gist.github.com/lg-bot/c496d878c1a63afce96fa59db460eaa5
