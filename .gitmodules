@@ -13,3 +13,9 @@
 [submodule "phase-4/version-a"]
 	path = phase-4/version-a
 	url = https://gist.github.com/lg-bot/c496d878c1a63afce96fa59db460eaa5
+[submodule "phase-3/version-c"]
+	path = phase-3/version-c
+	url = https://gist.github.com/lg-bot/1ea5b9cb6dfab086bcb2db3d144e81d4
+[submodule "phase-2/version-c"]
+	path = phase-2/version-c
+	url = https://gist.github.com/lg-bot/3014e0b8badc83994ae674fed4666dd7
