@@ -21,6 +21,7 @@ Coding challenge gists/quizzes (to give to learners at start of interview):
 - P3:
   - Version A: https://gist.github.com/lg-bot/1be9e9b91fc0f972b74b72df34c99d3d
   - Version B: https://gist.github.com/lg-bot/6c222924ee58adc43cc1ac600987b38e
+  - Version C: https://gist.github.com/lg-bot/1ea5b9cb6dfab086bcb2db3d144e81d4
 - P4: https://gist.github.com/lg-bot/c496d878c1a63afce96fa59db460eaa5
 
 ## Evaluations
