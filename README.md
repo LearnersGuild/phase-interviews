@@ -1,3 +1,7 @@
+**WARNING** If you make changes to the GitHub Gists linked to within this repo,
+you must also update the submodules for this repo. See `./bin/pull-submodules`
+for more info.
+
 # Phase Interviews
 
 Phase interview resources & solutions.
