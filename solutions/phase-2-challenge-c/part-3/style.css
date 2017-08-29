@@ -1,0 +1,86 @@
+/* ---------- */
+/* Header Bar */
+/* ---------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-size: 1em;
+  border: 2px solid black;
+}
+
+/* -------------------------- */
+/* Main Section (Books + Nav) */
+/* -------------------------- */
+
+#main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+/* --------------------------- */
+/* "Books" section of the page */
+/* --------------------------- */
+
+section {
+  border: 2px solid black;
+  border-top: none;
+  border-right: none;
+  padding: 1em;
+  flex-grow: 10;
+}
+
+section > .bookRow { display: flex; }
+
+section > .bookTitle { width: 40%; }
+
+section > .bookAuthor { width: 40% }
+
+section > .buyButton {
+  width: 20%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+section > h1 {
+  font-size: 3em;
+  padding: 0;
+  margin: 0;
+}
+
+section > h2 {
+  font-size: 1em;
+  font-style: italic;
+}
+
+/* ---------- */
+/* Navigation */
+/* ---------- */
+
+nav {
+  flex-basis: 150px;
+  flex-grow: 1;
+  border: 2px solid black;
+  border-top: none;
+  padding: 0
+}
+nav > h3 {
+  background-color: #CCC;
+  font-weight: normal;
+  padding: 0 1em 0 0.5em;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+nav > ul {
+  padding: 0em;
+  margin: 0em;
+}
+nav > ul > li {
+  padding: 3px;
+  list-style-type: none
+}
+nav > ul > li > a {
+  text-decoration: none
+}

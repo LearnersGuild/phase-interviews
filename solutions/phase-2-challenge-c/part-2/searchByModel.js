@@ -1,13 +1,14 @@
-const cars = require('./cars.json')
-
+const cars = require('./cars')
 const model = process.argv[2]
 
-console.log(`Finding cars with model "${model}"...`)
+const result = cars
+  .filter(car => car.model.toLowerCase() === model.toLowerCase())
+  .map(({id, model, year, last_owner, date_purchased}) => ({
+    id,
+    model,
+    year,
+    last_owner,
+    date_purchased,
+  }))
 
-const result = cars.filter((car) => car.model.toLowerCase() === model.toLowerCase())
-                   .map((car) => {
-                     const {id, model, year, last_owner, date_purchased} = car
-                     return {id, model, year, last_owner, date_purchased}
-                   })
-
-console.log(result)
+console.log(JSON.stringify(result, null, 4))

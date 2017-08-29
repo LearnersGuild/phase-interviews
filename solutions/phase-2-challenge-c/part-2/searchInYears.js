@@ -1,13 +1,15 @@
-const cars = require('./cars.json')
+const cars = require('./cars')
+const [min, max] = process.argv[2]
+  .split('-')
+  .map(n => parseInt(n))
 
-const [first, last] = process.argv[2].split('-').map(y => Number(y))
+const result = cars
+  .filter(({year}) => year >= min && year <= max)
+  .map(({id, make, model, year}) => ({
+    id,
+    make,
+    model,
+    year,
+  }))
 
-console.log(`Finding cars from ${first} to ${last}...`)
-
-const result = cars.filter((car) => car.year >= first && car.year <= last)
-                   .map((car) => {
-                     const {id, make, model, year} = car
-                     return {id, make, model, year}
-                   })
-
-console.log(result)
+console.log(JSON.stringify(result, null, 4))

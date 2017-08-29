@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "make": "Volkswagen",
+    "model": "Jetta",
+    "year": 2011,
+    "vin": "3573499720689269",
+    "last_owner": "Kaylil Minico",
+    "date_purchased": "7/3/2016"
+  },
+  {
+    "id": 2,
+    "make": "Toyota",
+    "model": "MR2",
+    "year": 2004,
+    "vin": "4911867083776541452",
+    "last_owner": "Farica Burren",
+    "date_purchased": "12/2/2004"
+  },
+  {
+    "id": 3,
+    "make": "Kia",
+    "model": "Sorento",
+    "year": 2005,
+    "vin": "5263674073052667",
+    "last_owner": "Stanwood Gives",
+    "date_purchased": "11/14/2012"
+  },
+  {
+    "id": 4,
+    "make": "Ford",
+    "model": "E250",
+    "year": 2005,
+    "vin": "3545018710263292",
+    "last_owner": "Charmane Caldron",
+    "date_purchased": "5/18/2016"
+  },
+  {
+    "id": 5,
+    "make": "Mercedes-Benz",
+    "model": "SLK-Class",
+    "year": 2001,
+    "vin": "491117058877320423",
+    "last_owner": "Kiri Jacox",
+    "date_purchased": "4/28/2007"
+  },
+  {
+    "id": 6,
+    "make": "Nissan",
+    "model": "Versa",
+    "year": 2008,
+    "vin": "201509397213528",
+    "last_owner": "Florie Frowing",
+    "date_purchased": "1/22/2003"
+  },
+  {
+    "id": 7,
+    "make": "Lexus",
+    "model": "GS",
+    "year": 2007,
+    "vin": "3575330885355073",
+    "last_owner": "Chas Reddy",
+    "date_purchased": "12/27/2009"
+  },
+  {
+    "id": 8,
+    "make": "Mercedes-Benz",
+    "model": "SL-Class",
+    "year": 2004,
+    "vin": "4041370582785",
+    "last_owner": "Aldwin Hannum",
+    "date_purchased": "8/20/2003"
+  },
+  {
+    "id": 9,
+    "make": "Hyundai",
+    "model": "Excel",
+    "year": 1993,
+    "vin": "5602242741808210830",
+    "last_owner": "Ignacius Richly",
+    "date_purchased": "5/14/2005"
+  },
+  {
+    "id": 10,
+    "make": "BMW",
+    "model": "525",
+    "year": 2006,
+    "vin": "3564255081826895",
+    "last_owner": "Ermina Macourek",
+    "date_purchased": "9/4/2008"
+  },
+  {
+    "id": 11,
+    "make": "Ford",
+    "model": "Focus",
+    "year": 2001,
+    "vin": "4017959668179",
+    "last_owner": "Debi Shedden",
+    "date_purchased": "12/2/2014"
+  },
+  {
+    "id": 12,
+    "make": "Buick",
+    "model": "Century",
+    "year": 2005,
+    "vin": "3568417933177895",
+    "last_owner": "Cash Stockdale",
+    "date_purchased": "12/18/2008"
+  },
+  {
+    "id": 13,
+    "make": "Eagle",
+    "model": "Summit",
+    "year": 1994,
+    "vin": "3533787092288275",
+    "last_owner": "Erma Drewet",
+    "date_purchased": "10/5/2008"
+  },
+  {
+    "id": 14,
+    "make": "Chevrolet",
+    "model": "Tracker",
+    "year": 2001,
+    "vin": "3585564428209219",
+    "last_owner": "Candace Matusevich",
+    "date_purchased": "1/11/2014"
+  },
+  {
+    "id": 15,
+    "make": "Mazda",
+    "model": "Protege",
+    "year": 2002,
+    "vin": "30174247120519",
+    "last_owner": "Jackson Ledstone",
+    "date_purchased": "11/8/2008"
+  },
+  {
+    "id": 16,
+    "make": "Chevrolet",
+    "model": "3500",
+    "year": 1993,
+    "vin": "3575385943176689",
+    "last_owner": "Helaine Baylay",
+    "date_purchased": "12/3/2013"
+  },
+  {
+    "id": 17,
+    "make": "Chrysler",
+    "model": "LHS",
+    "year": 1995,
+    "vin": "3565387565458140",
+    "last_owner": "Dickie Di Filippo",
+    "date_purchased": "7/14/2016"
+  },
+  {
+    "id": 18,
+    "make": "Ford",
+    "model": "Explorer",
+    "year": 2005,
+    "vin": "6767947697795139390",
+    "last_owner": "Alfreda Counsell",
+    "date_purchased": "9/24/2014"
+  },
+  {
+    "id": 19,
+    "make": "Toyota",
+    "model": "Avalon",
+    "year": 2002,
+    "vin": "30528852406044",
+    "last_owner": "Artur Mathivet",
+    "date_purchased": "6/9/2002"
+  },
+  {
+    "id": 20,
+    "make": "Mercury",
+    "model": "Capri",
+    "year": 1993,
+    "vin": "3576352538135594",
+    "last_owner": "Roxie Tunn",
+    "date_purchased": "2/26/2004"
+  },
+  {
+    "id": 21,
+    "make": "Toyota",
+    "model": "Land Cruiser",
+    "year": 1999,
+    "vin": "337941999546178",
+    "last_owner": "Jehanna Engelmann",
+    "date_purchased": "12/6/2008"
+  },
+  {
+    "id": 22,
+    "make": "Lamborghini",
+    "model": "Gallardo",
+    "year": 2011,
+    "vin": "589399502115608321",
+    "last_owner": "Milka Akitt",
+    "date_purchased": "2/7/2005"
+  },
+  {
+    "id": 23,
+    "make": "Ford",
+    "model": "Mustang",
+    "year": 1999,
+    "vin": "3533564513633904",
+    "last_owner": "Colleen Van Dalen",
+    "date_purchased": "8/17/2009"
+  },
+  {
+    "id": 24,
+    "make": "Chevrolet",
+    "model": "2500",
+    "year": 1996,
+    "vin": "3578249690909170",
+    "last_owner": "Muhammad Keast",
+    "date_purchased": "2/21/2016"
+  },
+  {
+    "id": 25,
+    "make": "Chevrolet",
+    "model": "Silverado",
+    "year": 2003,
+    "vin": "5602221592321833623",
+    "last_owner": "Ardith Jenks",
+    "date_purchased": "6/22/2015"
+  },
+  {
+    "id": 26,
+    "make": "Chevrolet",
+    "model": "Metro",
+    "year": 2000,
+    "vin": "630453354816698044",
+    "last_owner": "Abbie Cluely",
+    "date_purchased": "3/30/2008"
+  },
+  {
+    "id": 27,
+    "make": "Honda",
+    "model": "Accord",
+    "year": 1983,
+    "vin": "3538005621051634",
+    "last_owner": "Kaye Whordley",
+    "date_purchased": "7/17/2003"
+  },
+  {
+    "id": 28,
+    "make": "Ford",
+    "model": "ZX2",
+    "year": 2003,
+    "vin": "3587339857831108",
+    "last_owner": "Abdel Lygo",
+    "date_purchased": "9/23/2006"
+  },
+  {
+    "id": 29,
+    "make": "BMW",
+    "model": "3 Series",
+    "year": 2001,
+    "vin": "5602244114116374",
+    "last_owner": "Polly Knightley",
+    "date_purchased": "4/18/2014"
+  },
+  {
+    "id": 30,
+    "make": "Saab",
+    "model": "900",
+    "year": 1989,
+    "vin": "4017956174528",
+    "last_owner": "Lexie Drought",
+    "date_purchased": "4/7/2010"
+  },
+  {
+    "id": 31,
+    "make": "Toyota",
+    "model": "Highlander",
+    "year": 2012,
+    "vin": "4917921989321261",
+    "last_owner": "Kiley Nolton",
+    "date_purchased": "7/11/2008"
+  },
+  {
+    "id": 32,
+    "make": "Volkswagen",
+    "model": "Jetta",
+    "year": 1995,
+    "vin": "503883402499020223",
+    "last_owner": "Katerine McEllen",
+    "date_purchased": "1/8/2004"
+  },
+  {
+    "id": 33,
+    "make": "Toyota",
+    "model": "Truck Xtracab SR5",
+    "year": 1989,
+    "vin": "3535569555727280",
+    "last_owner": "Brooks Cadlock",
+    "date_purchased": "8/8/2010"
+  },
+  {
+    "id": 34,
+    "make": "Ford",
+    "model": "F150",
+    "year": 2011,
+    "vin": "676321631064178677",
+    "last_owner": "Spenser Goundrill",
+    "date_purchased": "4/15/2017"
+  },
+  {
+    "id": 35,
+    "make": "Chevrolet",
+    "model": "Corvette",
+    "year": 2007,
+    "vin": "5038779103697987",
+    "last_owner": "Lizzie Borsnall",
+    "date_purchased": "12/15/2002"
+  },
+  {
+    "id": 36,
+    "make": "Hyundai",
+    "model": "Tiburon",
+    "year": 2005,
+    "vin": "376203375076698",
+    "last_owner": "Julianna Costock",
+    "date_purchased": "7/8/2011"
+  },
+  {
+    "id": 37,
+    "make": "Hummer",
+    "model": "H2 SUT",
+    "year": 2006,
+    "vin": "3589738380922243",
+    "last_owner": "Wayne Stockey",
+    "date_purchased": "8/26/2004"
+  },
+  {
+    "id": 38,
+    "make": "BMW",
+    "model": "M5",
+    "year": 2010,
+    "vin": "3586237359946062",
+    "last_owner": "Benjy Blackhall",
+    "date_purchased": "11/12/2000"
+  },
+  {
+    "id": 39,
+    "make": "Saturn",
+    "model": "VUE",
+    "year": 2005,
+    "vin": "633419619190072454",
+    "last_owner": "Claudell Josefson",
+    "date_purchased": "5/24/2013"
+  },
+  {
+    "id": 40,
+    "make": "Lexus",
+    "model": "GX",
+    "year": 2009,
+    "vin": "5448713765982761",
+    "last_owner": "Avril Stone",
+    "date_purchased": "12/21/2014"
+  },
+  {
+    "id": 41,
+    "make": "Land Rover",
+    "model": "Range Rover",
+    "year": 1986,
+    "vin": "6761238492286747",
+    "last_owner": "Julee Broadberry",
+    "date_purchased": "7/28/2011"
+  },
+  {
+    "id": 42,
+    "make": "Chevrolet",
+    "model": "Camaro",
+    "year": 1969,
+    "vin": "560224490604151411",
+    "last_owner": "Linc Robel",
+    "date_purchased": "9/5/2014"
+  },
+  {
+    "id": 43,
+    "make": "Jeep",
+    "model": "Wrangler",
+    "year": 2005,
+    "vin": "5641829841831426426",
+    "last_owner": "Lizabeth Chastanet",
+    "date_purchased": "7/14/2007"
+  },
+  {
+    "id": 44,
+    "make": "Mercury",
+    "model": "Tracer",
+    "year": 1998,
+    "vin": "5893450007319565",
+    "last_owner": "Florida MacGaffey",
+    "date_purchased": "5/8/2009"
+  },
+  {
+    "id": 45,
+    "make": "Audi",
+    "model": "S4",
+    "year": 1994,
+    "vin": "4017957097504",
+    "last_owner": "Thorin Gleder",
+    "date_purchased": "6/11/2016"
+  },
+  {
+    "id": 46,
+    "make": "Mazda",
+    "model": "Mazdaspeed 3",
+    "year": 2012,
+    "vin": "3539813151094786",
+    "last_owner": "Larry Lax",
+    "date_purchased": "6/15/2016"
+  },
+  {
+    "id": 47,
+    "make": "Subaru",
+    "model": "Forester",
+    "year": 2008,
+    "vin": "3541046135183641",
+    "last_owner": "Berrie Treacy",
+    "date_purchased": "5/4/2007"
+  },
+  {
+    "id": 48,
+    "make": "Ford",
+    "model": "E350",
+    "year": 2003,
+    "vin": "3530059125201946",
+    "last_owner": "Richart Ankrett",
+    "date_purchased": "6/20/2015"
+  },
+  {
+    "id": 49,
+    "make": "Dodge",
+    "model": "Ram Van 1500",
+    "year": 2003,
+    "vin": "63042435749700338",
+    "last_owner": "Bud Kilmary",
+    "date_purchased": "3/21/2005"
+  },
+  {
+    "id": 50,
+    "make": "Ram",
+    "model": "3500",
+    "year": 2012,
+    "vin": "3557353939311092",
+    "last_owner": "Pavel Shambrook",
+    "date_purchased": "3/3/2015"
+  },
+  {
+    "id": 51,
+    "make": "Mercedes-Benz",
+    "model": "S-Class",
+    "year": 1984,
+    "vin": "3555716704274574",
+    "last_owner": "Leonard Sargint",
+    "date_purchased": "8/11/2010"
+  },
+  {
+    "id": 52,
+    "make": "Buick",
+    "model": "Regal",
+    "year": 1985,
+    "vin": "6763335665192294",
+    "last_owner": "Anselm O'Lunney",
+    "date_purchased": "4/3/2004"
+  },
+  {
+    "id": 53,
+    "make": "Infiniti",
+    "model": "Q",
+    "year": 2003,
+    "vin": "5602255179465241",
+    "last_owner": "Vivia Lothlorien",
+    "date_purchased": "5/15/2001"
+  },
+  {
+    "id": 54,
+    "make": "Mitsubishi",
+    "model": "Truck",
+    "year": 1986,
+    "vin": "3582933705137935",
+    "last_owner": "Anny Joron",
+    "date_purchased": "7/19/2002"
+  },
+  {
+    "id": 55,
+    "make": "Chevrolet",
+    "model": "Corvette",
+    "year": 1995,
+    "vin": "5048371526974868",
+    "last_owner": "Fredelia Bendon",
+    "date_purchased": "11/18/2008"
+  },
+  {
+    "id": 56,
+    "make": "Dodge",
+    "model": "Neon",
+    "year": 1998,
+    "vin": "3530741964677373",
+    "last_owner": "Ikey Yanne",
+    "date_purchased": "9/28/2012"
+  },
+  {
+    "id": 57,
+    "make": "Mercedes-Benz",
+    "model": "W201",
+    "year": 1989,
+    "vin": "5180416929112976",
+    "last_owner": "Steffie Tubb",
+    "date_purchased": "11/23/2004"
+  },
+  {
+    "id": 58,
+    "make": "Volvo",
+    "model": "S80",
+    "year": 2007,
+    "vin": "3556872911467565",
+    "last_owner": "El Hawson",
+    "date_purchased": "4/29/2015"
+  },
+  {
+    "id": 59,
+    "make": "GMC",
+    "model": "Safari",
+    "year": 2002,
+    "vin": "5602236597231894",
+    "last_owner": "Buck Caston",
+    "date_purchased": "12/5/2015"
+  },
+  {
+    "id": 60,
+    "make": "Mitsubishi",
+    "model": "Diamante",
+    "year": 1996,
+    "vin": "4701777094763",
+    "last_owner": "Cherilyn Keinrat",
+    "date_purchased": "6/22/2014"
+  },
+  {
+    "id": 61,
+    "make": "Ford",
+    "model": "Escort",
+    "year": 2002,
+    "vin": "3566164499581613",
+    "last_owner": "Karim Marshal",
+    "date_purchased": "3/20/2009"
+  },
+  {
+    "id": 62,
+    "make": "Chrysler",
+    "model": "Sebring",
+    "year": 2000,
+    "vin": "4017951761731261",
+    "last_owner": "Fairlie Daniaud",
+    "date_purchased": "4/19/2016"
+  },
+  {
+    "id": 63,
+    "make": "Toyota",
+    "model": "Sienna",
+    "year": 2005,
+    "vin": "6399886918431675",
+    "last_owner": "Arturo Bontine",
+    "date_purchased": "9/21/2007"
+  },
+  {
+    "id": 64,
+    "make": "Mazda",
+    "model": "MX-3",
+    "year": 1992,
+    "vin": "3571120977914638",
+    "last_owner": "Kerrill Stanfield",
+    "date_purchased": "7/13/2005"
+  },
+  {
+    "id": 65,
+    "make": "GMC",
+    "model": "Envoy",
+    "year": 1998,
+    "vin": "3551972555254413",
+    "last_owner": "Mead Woodes",
+    "date_purchased": "9/23/2007"
+  },
+  {
+    "id": 66,
+    "make": "Infiniti",
+    "model": "J",
+    "year": 1997,
+    "vin": "3584921660533089",
+    "last_owner": "Jared Hudson",
+    "date_purchased": "4/18/2003"
+  },
+  {
+    "id": 67,
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": 1996,
+    "vin": "5487966404813894",
+    "last_owner": "Deeann Offer",
+    "date_purchased": "8/27/2012"
+  },
+  {
+    "id": 68,
+    "make": "Volkswagen",
+    "model": "Golf III",
+    "year": 1994,
+    "vin": "3536471247965031",
+    "last_owner": "Cesare Gawler",
+    "date_purchased": "9/16/2009"
+  },
+  {
+    "id": 69,
+    "make": "Acura",
+    "model": "TL",
+    "year": 2002,
+    "vin": "56022415828695169",
+    "last_owner": "Raymund Freda",
+    "date_purchased": "3/21/2001"
+  },
+  {
+    "id": 70,
+    "make": "Aston Martin",
+    "model": "V8 Vantage",
+    "year": 2007,
+    "vin": "3557895091744593",
+    "last_owner": "Meade Boulden",
+    "date_purchased": "8/4/2007"
+  },
+  {
+    "id": 71,
+    "make": "Mitsubishi",
+    "model": "Endeavor",
+    "year": 2005,
+    "vin": "4026558319171301",
+    "last_owner": "Lee Mabbitt",
+    "date_purchased": "8/24/2008"
+  },
+  {
+    "id": 72,
+    "make": "Chevrolet",
+    "model": "Monte Carlo",
+    "year": 2007,
+    "vin": "3570425592647757",
+    "last_owner": "Pren Emmens",
+    "date_purchased": "8/20/2014"
+  },
+  {
+    "id": 73,
+    "make": "BMW",
+    "model": "X5",
+    "year": 2007,
+    "vin": "3545658836108192",
+    "last_owner": "Melantha Dome",
+    "date_purchased": "2/27/2001"
+  },
+  {
+    "id": 74,
+    "make": "Chevrolet",
+    "model": "S10",
+    "year": 1996,
+    "vin": "5259950873307527",
+    "last_owner": "Brietta Birchwood",
+    "date_purchased": "1/22/2014"
+  },
+  {
+    "id": 75,
+    "make": "Acura",
+    "model": "TL",
+    "year": 2004,
+    "vin": "4017958535759",
+    "last_owner": "Lindsay Brosetti",
+    "date_purchased": "4/10/2011"
+  },
+  {
+    "id": 76,
+    "make": "Volkswagen",
+    "model": "Eos",
+    "year": 2007,
+    "vin": "5602233514609443",
+    "last_owner": "Cesya Lanbertoni",
+    "date_purchased": "4/14/2006"
+  },
+  {
+    "id": 77,
+    "make": "Dodge",
+    "model": "Intrepid",
+    "year": 1994,
+    "vin": "3576902600293810",
+    "last_owner": "Pris Sawer",
+    "date_purchased": "11/12/2003"
+  },
+  {
+    "id": 78,
+    "make": "BMW",
+    "model": "530",
+    "year": 2005,
+    "vin": "3587656369986199",
+    "last_owner": "Roley Bridgwater",
+    "date_purchased": "10/21/2003"
+  },
+  {
+    "id": 79,
+    "make": "Chevrolet",
+    "model": "Impala",
+    "year": 2000,
+    "vin": "3575858337018170",
+    "last_owner": "Aleece Azema",
+    "date_purchased": "3/1/2014"
+  },
+  {
+    "id": 80,
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2011,
+    "vin": "30435471221285",
+    "last_owner": "Quintina Stredwick",
+    "date_purchased": "8/10/2000"
+  },
+  {
+    "id": 81,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution",
+    "year": 2004,
+    "vin": "3564220042793873",
+    "last_owner": "Kirby Sahlstrom",
+    "date_purchased": "4/11/2007"
+  },
+  {
+    "id": 82,
+    "make": "Acura",
+    "model": "NSX",
+    "year": 1992,
+    "vin": "201516286650132",
+    "last_owner": "Bertine Ghelardi",
+    "date_purchased": "1/14/2007"
+  },
+  {
+    "id": 83,
+    "make": "Dodge",
+    "model": "Ram Van 3500",
+    "year": 2002,
+    "vin": "4911665755035209286",
+    "last_owner": "Grace Beyn",
+    "date_purchased": "6/24/2007"
+  },
+  {
+    "id": 84,
+    "make": "Mercury",
+    "model": "Villager",
+    "year": 2002,
+    "vin": "6762838525160725",
+    "last_owner": "Roshelle Enders",
+    "date_purchased": "10/18/2002"
+  },
+  {
+    "id": 85,
+    "make": "Dodge",
+    "model": "Grand Caravan",
+    "year": 1999,
+    "vin": "3549462837395395",
+    "last_owner": "Quent Gilham",
+    "date_purchased": "1/16/2014"
+  },
+  {
+    "id": 86,
+    "make": "Mercedes-Benz",
+    "model": "C-Class",
+    "year": 1995,
+    "vin": "3543806295379869",
+    "last_owner": "Juliann Patton",
+    "date_purchased": "10/31/2000"
+  },
+  {
+    "id": 87,
+    "make": "Volkswagen",
+    "model": "GTI",
+    "year": 1996,
+    "vin": "3535984795433963",
+    "last_owner": "Enrika McKerrow",
+    "date_purchased": "11/2/2007"
+  },
+  {
+    "id": 88,
+    "make": "Chevrolet",
+    "model": "Beretta",
+    "year": 1995,
+    "vin": "5893209109479876170",
+    "last_owner": "Karylin Stiles",
+    "date_purchased": "4/21/2003"
+  },
+  {
+    "id": 89,
+    "make": "Ford",
+    "model": "F350",
+    "year": 2011,
+    "vin": "3539883954820901",
+    "last_owner": "Brigham Isenor",
+    "date_purchased": "7/3/2016"
+  },
+  {
+    "id": 90,
+    "make": "Ford",
+    "model": "F-Series",
+    "year": 2003,
+    "vin": "3586302186114258",
+    "last_owner": "Stern Revans",
+    "date_purchased": "5/4/2007"
+  },
+  {
+    "id": 91,
+    "make": "Honda",
+    "model": "Pilot",
+    "year": 2010,
+    "vin": "5048372465807465",
+    "last_owner": "Tobiah Espinosa",
+    "date_purchased": "1/27/2002"
+  },
+  {
+    "id": 92,
+    "make": "Nissan",
+    "model": "Quest",
+    "year": 1999,
+    "vin": "4972791499789",
+    "last_owner": "Simonne Yu",
+    "date_purchased": "8/12/2000"
+  },
+  {
+    "id": 93,
+    "make": "Ford",
+    "model": "F-Series Super Duty",
+    "year": 2012,
+    "vin": "633487026079502147",
+    "last_owner": "Rois Celloni",
+    "date_purchased": "5/10/2013"
+  },
+  {
+    "id": 94,
+    "make": "Dodge",
+    "model": "Viper",
+    "year": 2003,
+    "vin": "5602218484567341",
+    "last_owner": "Anjela Aukland",
+    "date_purchased": "10/18/2010"
+  },
+  {
+    "id": 95,
+    "make": "Pontiac",
+    "model": "Firefly",
+    "year": 1984,
+    "vin": "201750746048278",
+    "last_owner": "Kandace McEvay",
+    "date_purchased": "9/29/2007"
+  },
+  {
+    "id": 96,
+    "make": "Eagle",
+    "model": "Talon",
+    "year": 1991,
+    "vin": "06046344133772124",
+    "last_owner": "Arabele Bramah",
+    "date_purchased": "7/16/2007"
+  },
+  {
+    "id": 97,
+    "make": "Kia",
+    "model": "Rio",
+    "year": 2001,
+    "vin": "675958176312157547",
+    "last_owner": "Callie Laroux",
+    "date_purchased": "9/6/2009"
+  },
+  {
+    "id": 98,
+    "make": "Lexus",
+    "model": "LX",
+    "year": 2010,
+    "vin": "3579524445590221",
+    "last_owner": "Korrie Poznan",
+    "date_purchased": "10/6/2007"
+  },
+  {
+    "id": 99,
+    "make": "Chevrolet",
+    "model": "Blazer",
+    "year": 1996,
+    "vin": "4041371073370",
+    "last_owner": "Othella Allon",
+    "date_purchased": "10/3/2008"
+  },
+  {
+    "id": 100,
+    "make": "Nissan",
+    "model": "Armada",
+    "year": 2010,
+    "vin": "677176625948092561",
+    "last_owner": "Page Sneller",
+    "date_purchased": "11/4/2006"
+  }
+]
