@@ -1,0 +1,86 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: solid 2px black;
+  padding: 0px 10px 0px 10px;
+}
+
+header button {
+  height: 40px;
+  width: 100px;
+}
+
+main {
+  display: flex;
+}
+
+nav {
+  flex-grow: 0;
+  border: solid black;
+  border-width: 0px 2px 2px 2px;
+  margin: 0;
+  min-width: 15%;
+}
+
+nav h2, nav ul {
+  padding: 0px 5% 10px 5%;
+  font-size: 1em;
+  margin: 0;
+}
+
+nav h2 {
+  padding-top: 10px;
+  background: #AAA;
+  border-bottom: solid 2px black;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  margin-top: 5px
+}
+
+#movies {
+  flex-grow: 1;
+  padding-left: 5%;
+  border: solid black;
+  border-width: 0px 2px 2px 0px
+}
+
+#movies h2 {
+  font-size: 5em;
+  margin: 0;
+}
+
+#movies h3 {
+  font-style: italic;
+  font-weight: normal;
+}
+
+#movies h4 {
+  font-weight: normal;
+}
+
+.movieRow {
+    display: flex;
+    align-items: center;
+}
+
+.movieRow button {
+  margin-right: 20px;
+  height: 25px;
+  width: 60px;
+}
+
+.movieRow h4 {
+  width: 50%
+}
+
+.movieRow .runtime {
+  margin-right: 5%
+  flex-grow: 1
+}
