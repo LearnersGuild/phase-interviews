@@ -36,7 +36,7 @@
 
 - [ ] __5:__ Route uses POST
 - [ ] __10:__ Route accesses POST data
-- [ ] __10:__ Route uses addChunk to add the chunk to
+- [ ] __10:__ Route uses addChunk to add the chunk to the database
 - [ ] __5:__ Successful adding of the chunk returns 200 status
 - [ ] __5:__ Unsuccessful adding of the chunk returns 400 status
 
