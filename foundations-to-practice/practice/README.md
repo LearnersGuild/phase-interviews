@@ -4,6 +4,8 @@
 
 - This is intended to give you an idea of the type of tasks you will be asked to do for the live coding interview.
 
+- You may choose either pug or ejs as a template engine.
+
 - The live coding interview will have all the same sections as this practice exam, but the exact tasks will vary. For example, you may be asked to implement a different HTML feature or change a different CSS property. Or you may be asked to utilize GET data instead of POST data in the Express section.
 
 - Refer to the (TODO: some link here) list of topics covered to understand the possible range of topics.
