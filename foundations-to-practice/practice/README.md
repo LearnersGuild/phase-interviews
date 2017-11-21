@@ -1,6 +1,6 @@
 # Foundations -> Practice practice challenge
 
-## Notes on the Practice challenge (please read carefully)
+## Notes on this Practice challenge (please read carefully)
 
 - This is intended to give you an idea of the type of tasks you will be asked to do for the live coding interview.
 
@@ -8,7 +8,7 @@
 
 - Refer to the (TODO: some link here) list of topics covered to understand the possible range of topics.
 
-## Part I: SQL
+## Part 1: SQL
 
 ### SQL Query
 Write a query to obtain the following data:
@@ -20,20 +20,19 @@ Create a function in *db.js* using `pg-promise`.
 
   - [ ] __10:__ Function takes the name of a chunk
   - [ ] __10:__ Function executes the query successfully
-  - [ ] __10:__ Function returns a promise resolving to an array with the names of flavors containing the chunk
+  - [ ] __10:__ Function returns a promise resolving to an array with the names of flavors containing the specified chunk
 
-## Part II: Express
+## Part 2: Express
 
 ### GET route
-Create a GET route for */flavors* that renders ice cream flavor names. Use the `getIcecreamFlavors` function in *db.js*.
+Create a GET route for */flavors* that renders ice cream flavor names. Use the `getIcecreamFlavors` function provided in *db.js*.
 
 - [ ] __5:__ Route uses GET
-- [ ] __5:__ Response contains appropriate headers
 - [ ] __10:__ Route uses getIcecreamFlavors to get the necessary data
 - [ ] __10:__ Route renders `flavors.pug` template with the ice cream flavors from the db
 
 ### POST route
-Create a POST route for */chunk/add* that adds a new chunk to the database. Use the `addChunk` function in *db.js*.
+Create a POST route for */chunk/add* that adds a new chunk to the database. Use the `addChunk` function provided in *db.js*.
 
 - [ ] __5:__ Route uses POST
 - [ ] __10:__ Route accesses POST data
@@ -41,7 +40,7 @@ Create a POST route for */chunk/add* that adds a new chunk to the database. Use 
 - [ ] __5:__ Successful adding of the chunk returns 200 status
 - [ ] __5:__ Unsuccessful adding of the chunk returns 400 status
 
-## Part III: Front-End
+## Part 3: Front-End
 
 ### HTML and CSS
 Add a light blue banner across the top of the `flavors.pug` page with a title "Ice Cream Flavors"
@@ -51,7 +50,7 @@ Add a light blue banner across the top of the `flavors.pug` page with a title "I
 - [ ] __5:__ The background of the banner is light blue
 
 ### AJAX
-When the user clicks the "Get Current Bestseller" button, make an AJAX call to */current_bestseller* and display the results in the span with the id *bestseller*.
+When the user clicks the "Get Current Bestseller" button, make an AJAX call to the provided */current_bestseller* and display the results in the span with the id *bestseller*.
 
 - [ ] __10:__ AJAX call is initiated when user clicks button
 - [ ] __10:__ AJAX call gets data from route
