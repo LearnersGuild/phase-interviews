@@ -6,8 +6,8 @@
 
 - You may choose either pug or ejs as a template engine.
 
-- The live coding interview will have all the same sections as this practice exam, but the exact tasks will vary. For example, you may be asked to:
-  - change a different CSS property
+- The live coding interview will have __all the same sections__ as this practice exam, but the __exact tasks will vary__. For example, you may be asked to:
+  - write a different kind of SQL query
   - utilize GET data in the *Express GET Route* section
   - add an element to the DOM
 
@@ -22,7 +22,7 @@
 Create a function in `db.js` called `getFlavors` that uses `pg-promise`. The function should get the names of all ice cream flavors for a given chunk name.
 
   - [ ] __5:__ Function takes the name of a chunk
-  - [ ] __10:__ Function executes a query that returns the given chunk's associated flavors
+  - [ ] __15:__ Function executes a query that returns the given chunk's associated flavors
   - [ ] __10:__ Function returns a promise resolving to the result of the query
 
 ## Part 2: Express
