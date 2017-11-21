@@ -25,7 +25,7 @@ Create a function in `db.js` called `getFlavors` that uses `pg-promise`.
 ## Part 2: Express
 
 ### GET route
-Create a GET route for `/flavors` that renders ice cream flavor names. Use the `getIcecreamFlavors` function provided in `db.js`.
+Create a GET route for `/flavors` that renders ice cream flavor names. Use the `getAllFlavors` function provided in `db.js`.
 
 - [ ] __5:__ Route uses GET
 - [ ] __10:__ Route uses getIcecreamFlavors to get the necessary data
