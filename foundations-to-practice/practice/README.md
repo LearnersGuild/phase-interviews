@@ -6,7 +6,10 @@
 
 - You may choose either pug or ejs as a template engine.
 
-- The live coding interview will have all the same sections as this practice exam, but the exact tasks will vary. For example, you may be asked to implement a different HTML feature or change a different CSS property. Or you may be asked to utilize GET data in the Express GET route section.
+- The live coding interview will have all the same sections as this practice exam, but the exact tasks will vary. For example, you may be asked to:
+  - change a different CSS property
+  - utilize GET data in the *Express GET Route* section
+  - add an element to the DOM
 
 - Refer to the (TODO: some link here) list of topics covered to understand the possible range of topics.
 
