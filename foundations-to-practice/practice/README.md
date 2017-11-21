@@ -56,4 +56,4 @@ When the user clicks the "Get Current Bestseller" button, make an AJAX call to t
 
 - [ ] __10:__ AJAX call is initiated when user clicks button
 - [ ] __10:__ AJAX call gets data from route
-- [ ] __10:__ Front end JavaScript displays the result in the `bestseller` span
+- [ ] __10:__ After AJAX is complete, the result displays in the `bestseller` span
