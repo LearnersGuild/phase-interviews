@@ -17,15 +17,12 @@
 
 ## Part 1: SQL
 
-### SQL Query
-
-  - [ ] __20:__ Write a query that returns the names of all flavors which contain the chunk "chocolate chips".
-
 ### Node and PostgreSQL
-Create a function in `db.js` called `getFlavors` that uses `pg-promise`.
+
+Create a function in `db.js` called `getFlavors` that uses `pg-promise`. The function should get the names of all ice cream flavors for a given chunk name.
 
   - [ ] __5:__ Function takes the name of a chunk
-  - [ ] __10:__ Function executes the query successfully for the given chunk name
+  - [ ] __10:__ Function executes a query that returns the given chunk's associated flavors
   - [ ] __10:__ Function returns a promise resolving to the result of the query
 
 ## Part 2: Express
