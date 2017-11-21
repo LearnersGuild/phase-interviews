@@ -28,7 +28,7 @@ INSERT INTO flavors (name) VALUES
   ('strawberry cheesecake'),
   ('pistachio'),
   ('coffee toffee crunch'),
-  ('s\'mores')
+  ('smores')
 ;
 
 INSERT INTO flavor_chunks (chunk_id, flavor_id) VALUES
