@@ -16,10 +16,10 @@ Write a query to obtain the following data:
   - [ ] __20:__ Names of all flavors that contain chocolate chips.
 
 ### Node and PostgreSQL
-Create a function in `db.js` using `pg-promise`.
+Create a function in `db.js` called `getFlavors` that uses `pg-promise`.
 
-  - [ ] __10:__ Function takes the name of a chunk
-  - [ ] __10:__ Function executes the query successfully
+  - [ ] __5:__ Function takes the name of a chunk
+  - [ ] __10:__ Function executes the query successfully for the given chunk name
   - [ ] __10:__ Function returns a promise resolving to an array with the names of flavors containing the specified chunk
 
 ## Part 2: Express
