@@ -29,7 +29,7 @@ Create a GET route for `/flavors` that renders ice cream flavor names. Use the `
 
 - [ ] __5:__ Route uses GET
 - [ ] __10:__ Route uses getIcecreamFlavors to get the necessary data
-- [ ] __10:__ Route renders `flavors.pug` template with the ice cream flavors from the db
+- [ ] __10:__ Route renders `flavors.pug` OR `flavors.ejs` template with the ice cream flavors from the db
 
 ### POST route
 Create a POST route for `/chunk/add` that adds a new chunk to the database. Use the `addChunk` function provided in `db.js`.
@@ -43,7 +43,7 @@ Create a POST route for `/chunk/add` that adds a new chunk to the database. Use 
 ## Part 3: Front-End
 
 ### HTML and CSS
-Add a light blue banner across the top of the `flavors.pug` page with a title "Ice Cream Flavors"
+Add a light blue banner across the top of the `flavors.pug` OR `flavors.ejs` page with a title "Ice Cream Flavors"
 
 - [ ] __10:__ The banner spans the entire page width
 - [ ] __10:__ The title is centered within the banner
