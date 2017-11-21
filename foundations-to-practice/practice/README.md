@@ -16,7 +16,7 @@ Write a query to obtain the following data:
   - [ ] __20:__ Names of all flavors that contain chocolate chips.
 
 ### Node and PostgreSQL
-Create a function in *db.js* using `pg-promise`.
+Create a function in `db.js` using `pg-promise`.
 
   - [ ] __10:__ Function takes the name of a chunk
   - [ ] __10:__ Function executes the query successfully
@@ -25,14 +25,14 @@ Create a function in *db.js* using `pg-promise`.
 ## Part 2: Express
 
 ### GET route
-Create a GET route for */flavors* that renders ice cream flavor names. Use the `getIcecreamFlavors` function provided in *db.js*.
+Create a GET route for `/flavors` that renders ice cream flavor names. Use the `getIcecreamFlavors` function provided in `db.js`.
 
 - [ ] __5:__ Route uses GET
 - [ ] __10:__ Route uses getIcecreamFlavors to get the necessary data
 - [ ] __10:__ Route renders `flavors.pug` template with the ice cream flavors from the db
 
 ### POST route
-Create a POST route for */chunk/add* that adds a new chunk to the database. Use the `addChunk` function provided in *db.js*.
+Create a POST route for `/chunk/add` that adds a new chunk to the database. Use the `addChunk` function provided in `db.js`.
 
 - [ ] __5:__ Route uses POST
 - [ ] __10:__ Route accesses POST data
@@ -50,8 +50,8 @@ Add a light blue banner across the top of the `flavors.pug` page with a title "I
 - [ ] __5:__ The background of the banner is light blue
 
 ### AJAX
-When the user clicks the "Get Current Bestseller" button, make an AJAX call to the provided */current_bestseller* and display the results in the span with the id *bestseller*.
+When the user clicks the "Get Current Bestseller" button, make an AJAX call to the provided `/current_bestseller` and display the results in the span with the id `bestseller`.
 
 - [ ] __10:__ AJAX call is initiated when user clicks button
 - [ ] __10:__ AJAX call gets data from route
-- [ ] __10:__ Front end JavaScript displays the result in the *bestseller* span
+- [ ] __10:__ Front end JavaScript displays the result in the `bestseller` span
