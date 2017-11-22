@@ -1,29 +1,29 @@
 const express = require('express')
 const bodyParser = require('body-parser');
-const { getAllFlavors, addChunk } = require('./db/db')
+const { getAllTeamNames } = require('./db/db')
 
 const app = express()
 app.use(express.static('public'))
 // app.set('view engine', 'pug')
-app.set('view engine', 'ejs')
+// app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
-  getAllFlavors()
-    .then((flavors) => {
-      // res.render('flavors.pug', { flavors })
-      res.render('flavors.ejs', { flavors })
+  getAllTeamNames()
+    .then((teams) => {
+      // res.render('teams.pug', { teams })
+      // res.render('teams.ejs', { teams })
     })
 })
 
-app.get('/current_bestseller', (req, res) => {
-  getAllFlavors()
-    .then((flavors) => {
-      // get "bestseller" randomly
-      const bestseller = flavors[Math.floor(Math.random() * flavors.length)]
-      res.send(bestseller)
+app.get('/current_favorite_team', (req, res) => {
+  getAllTeamNames()
+    .then((teams) => {
+      // get "favorite team" randomly
+      const favoriteTeam = teams[Math.floor(Math.random() * teams.length)]
+      res.send(favoriteTeam)
     })
 })
 
 app.listen(3000, () =>
-  console.log('Scooping out ice cream on port 3000!')
+  console.log('Playing ball on port 3000!')
 )

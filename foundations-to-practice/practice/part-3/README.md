@@ -3,7 +3,7 @@
 
 ## To install
 - `npm install`
-- Run database installation instructions from Part 1 if the icecream_flavors db hasn't yet been created and seeded.
+- Run database installation instructions from Part 1 if the team_colors db hasn't yet been created and seeded.
 
 ## To start server
 - `npm run dev:start`

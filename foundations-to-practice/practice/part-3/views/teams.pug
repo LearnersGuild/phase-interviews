@@ -1,0 +1,12 @@
+html
+  head
+    title Bay Area Sports Teams
+  body
+    h2 Our Teams
+    ul
+      each team in teams
+          li= team
+    h2 Favorite Team
+    p Our current favorite team is: 
+      span(id='favorite-team')
+    button Get Current Favorite Team

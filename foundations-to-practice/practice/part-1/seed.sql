@@ -1,49 +1,43 @@
-\c icecream_flavors
+\c team_colors
 
-INSERT INTO chunk_types (name) VALUES
-  ('candy'),
-  ('nuts'),
-  ('fruit'),
-  ('other')
+INSERT INTO cities (name) VALUES
+  ('San Francisco'),
+  ('Oakland'),
+  ('San Jose')
 ;
 
-INSERT INTO chunks (name, type_id) VALUES
-  ('almonds', 2),
-  ('toffee', 1),
-  ('chocolate chips', 1),
-  ('marshmallows', 1),
-  ('gumballs', 1),
-  ('pecans', 2),
-  ('strawberries', 3),
-  ('pistachios', 2),
-  ('graham crackers', 4)
+INSERT INTO colors (name) VALUES
+  ('red'),
+  ('gold'),
+  ('silver'),
+  ('black'),
+  ('green'),
+  ('white'),
+  ('orange'),
+  ('cream'),
+  ('blue')
 ;
 
-INSERT INTO flavors (name) VALUES
-  ('mocha almond fudge'),
-  ('mint chip'),
-  ('rocky road'),
-  ('bubble gum'),
-  ('butter pecan'),
-  ('strawberry cheesecake'),
-  ('pistachio'),
-  ('coffee toffee crunch'),
-  ('smores')
+INSERT INTO teams (name, city_id, mascot) VALUES
+  ('Warriors', 2, 'Thunder'),
+  ('Forty-Niners', 1, 'Sourdough Sam'),
+  ('Raiders', 2, 'Raider Rusher'),
+  ('Giants', 1, 'Lou Seal'),
+  ('Athletics', 2, 'Stomper')
 ;
 
-INSERT INTO flavor_chunks (chunk_id, flavor_id) VALUES
-  (1, 1),
-  (2, 3),
-  (3, 1),
+INSERT INTO team_colors (team_id, color_id) VALUES
+  (2, 1),
+  (2, 2),
   (3, 3),
   (3, 4),
-  (4, 5),
+  (5, 2),
+  (5, 5),
   (5, 6),
-  (6, 7),
-  (7, 8),
-  (8, 2),
-  (9, 1),
-  (9, 3),
-  (9, 9),
-  (6, 9)
+  (4, 7),
+  (4, 8),
+  (4, 4),
+  (4, 2),
+  (1, 2),
+  (1, 9)
 ;

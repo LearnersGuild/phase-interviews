@@ -1,26 +1,27 @@
-DROP DATABASE IF EXISTS icecream_flavors;
-CREATE DATABASE icecream_flavors;
+DROP DATABASE IF EXISTS team_colors;
+CREATE DATABASE team_colors;
 
-\c icecream_flavors
+\c team_colors
 
-CREATE TABLE chunk_types (
+CREATE TABLE cities (
   id SERIAL PRIMARY KEY,
   name VARCHAR(64)
 );
 
-CREATE TABLE chunks (
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(64),
-  type_id INTEGER REFERENCES chunk_types
-);
-
-CREATE TABLE flavors (
+CREATE TABLE colors (
   id SERIAL PRIMARY KEY,
   name VARCHAR(64)
 );
 
-CREATE TABLE flavor_chunks (
+CREATE TABLE teams (
   id SERIAL PRIMARY KEY,
-  chunk_id INTEGER REFERENCES chunks,
-  flavor_id INTEGER REFERENCES flavors
+  name VARCHAR(64) UNIQUE,
+  mascot VARCHAR(64),
+  city_id INTEGER REFERENCES cities
+);
+
+CREATE TABLE team_colors (
+  id SERIAL PRIMARY KEY,
+  team_id INTEGER REFERENCES teams,
+  color_id INTEGER REFERENCES colors
 );
