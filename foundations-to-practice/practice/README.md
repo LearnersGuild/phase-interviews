@@ -52,9 +52,8 @@ Add a light blue banner across the top of the `teams.pug` OR `teams.ejs` page wi
 - [ ] __10:__ The title is centered within the banner
 - [ ] __5:__ The background of the banner is light blue
 
-### AJAX
-When the user clicks the "Get Current Favorite Team" button, make an AJAX call to the provided `/current_favorite_team` route and display the results in the span with the id `favorite-team`.
+### DOM Manipulation
+When the user clicks the "Add Team" button, add the team name from the text box to the list of teams on the page.
 
-- [ ] __10:__ AJAX call initiates when user clicks button
-- [ ] __10:__ AJAX call gets data from route
-- [ ] __10:__ After AJAX is complete, the result displays in the `favorite-team` span
+- [ ] __10:__ Add event listener to "Add Team" button
+- [ ] __15:__ Add team name as another entry in the team list on the page.

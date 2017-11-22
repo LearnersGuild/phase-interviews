@@ -6,13 +6,13 @@
   </head>
   <body>
     <h2>Our Teams</h2>
-    <ul>
+    <ul id='team-list'>
       <% for (var team of teams) { %>
         <li><%= team %></li>
       <% } %>
     </ul>
-    <h2>Favorite Team</h2>
-    <p>Our current favorite team is: <span id="favorite-team"></span></p>
-    <button>Get Current Favorite Team</button>
+    <h2>Add Team</h2>
+    <input type="text" id="new-team-name">
+    <button id="add-team">Add team</button>
   </body>
 </html>

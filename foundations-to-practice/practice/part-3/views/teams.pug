@@ -3,10 +3,9 @@ html
     title Bay Area Sports Teams
   body
     h2 Our Teams
-    ul
+    ul(id='team-list')
       each team in teams
           li= team
-    h2 Favorite Team
-    p Our current favorite team is: 
-      span(id='favorite-team')
-    button Get Current Favorite Team
+    h2 Add Team
+    input(id='new-team-name', type='text')
+    button(id='add-team') Add team
