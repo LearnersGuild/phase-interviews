@@ -9,7 +9,7 @@
 - The live coding interview will have __all the same sections__ as this practice exam, but the __exact tasks will vary__. For example, you may be asked to:
   - write a different kind of SQL query
   - utilize GET data in the *Express GET Route* section
-  - add an element to the DOM
+  - remove an element from the DOM
 
 - Refer to the (TODO: some link here) list of topics covered to understand the possible range of topics.
 
@@ -53,7 +53,8 @@ Add a light blue banner across the top of the `teams.pug` OR `teams.ejs` page wi
 - [ ] __5:__ The background of the banner is light blue
 
 ### DOM Manipulation
-When the user clicks the "Add Team" button, add the team name from the text box to the list of teams on the page.
+When the user clicks the "Add Team" button, add a new team name (entered in the text box) to the list of teams on the page.
 
 - [ ] __10:__ Add event listener to "Add Team" button
-- [ ] __15:__ Add team name as another entry in the team list on the page.
+- [ ] __10:__ Add another entry to the team list on the page after button click.
+- [ ] __10:__ The new entry to the team list contains the new team name entered in the text box.
