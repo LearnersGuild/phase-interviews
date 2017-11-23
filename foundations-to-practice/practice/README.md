@@ -29,7 +29,7 @@ __Note__: For this and the following sections, please be sure to __read and foll
 
 ### Node and PostgreSQL
 
-Create a function in `db.js` called `getTeamColors` that uses `pg-promise`. The function should get the names of all colors for a given team.
+Create a function in `db.js` called `getTeamColors` that uses `pg-promise`. The function should get the names of all colors for a given team (the raw result from `pg-promise` is fine -- it's not necessary to process the result to make, say, an array of strings).
 
   - [ ] __5:__ Function accepts the name of a team as a parameter
   - [ ] __15:__ Function executes a query that returns the given team's associated colors
@@ -56,7 +56,7 @@ Create a POST route for `/teams/add` that receives JSON data and adds a new team
 
 - [ ] __5:__ Route uses POST
 - [ ] __10:__ Route accesses POST data
-- [ ] __10:__ Route uses addTeam to add the team to the database
+- [ ] __10:__ Route uses `addTeam` to add the team to the database
 - [ ] __10:__ Successful adding of the team returns 200 status and JSON with the key `teamName` (and the appropriate value)
 - [ ] __10:__ Unsuccessful adding of the team returns 400 status and JSON containing the key `message` with an error message as the value.
 - [ ] __10:__ Learner demonstrates POST route functionality using Postman, curl, or the like as a client.
@@ -66,13 +66,15 @@ Create a POST route for `/teams/add` that receives JSON data and adds a new team
 ### HTML and CSS
 Add a yellow banner across the top of the `team_colors.pug` OR `team_colors.ejs` page with a title "<teamName> Colors" (where <teamName> is the name of the team whose colors are being displayed).
 
-- [ ] __10:__ The banner spans the entire page width
-- [ ] __10:__ The title is centered within the banner
+- [ ] __5:__ The banner displays on the page
+- [ ] __5:__ The banner spans the entire page width
+- [ ] __5:__ The title is centered within the banner
 - [ ] __5:__ The background of the banner is yellow
+- [ ] __10:__ The styling is defined in the `public/team_colors.css` file (not in the html page)
 
 ### DOM Manipulation
-When the user clicks the "Add Color" button, add a new color (entered in the text box) to the list of colors on the page. __Note: There is no need to update the database or communicate with the server in any way.__
+When the user clicks the "Add Color" button, add a new color to the list of colors on the page. The new color to be added will be entered in the text box. __Note: There is no need to update the database or communicate with the server in any way.__
 
-- [ ] __10:__ Add event listener to "Add Color" button
-- [ ] __10:__ Add another entry to the color list on the page after button click.
-- [ ] __10:__ The new entry to the color list contains the new color name entered in the text input box.
+- [ ] __10:__ The "Add Color" button has an event listener on click
+- [ ] __10:__ The color list has another item after button click
+- [ ] __10:__ The new color list item contains the contents of the text input box
