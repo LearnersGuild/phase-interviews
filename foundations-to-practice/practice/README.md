@@ -45,10 +45,11 @@ Create a GET route for `/:teamname/colors` that renders colors for a particular 
 - [ ] __10:__ Route renders `team_colors.pug` OR `team_colors.ejs` template with the teams from the db
 
 ### POST route
-Create a POST route for `/:teamname/colors/add` that receives JSON data and adds a new team to the database. Use the `addTeamColor` function provided in `db.js`. Example JSON POST data:
+Create a POST route for `/teams/add` that receives JSON data and adds a new team to the database. Use the `addTeam` function provided in `db.js`. Example JSON POST data:
 
-```{
-  "name": "LG Engineers",
+```
+{
+  "teamName": "LG Engineers",
   "city": "Oakland"
 }
 ```
@@ -56,7 +57,7 @@ Create a POST route for `/:teamname/colors/add` that receives JSON data and adds
 - [ ] __5:__ Route uses POST
 - [ ] __10:__ Route accesses POST data
 - [ ] __10:__ Route uses addTeam to add the team to the database
-- [ ] __5:__ Successful adding of the team returns 200 status and JSON with the key 'teamName' (and the appropriate value)
+- [ ] __5:__ Successful adding of the team returns 200 status and JSON with the key `teamName` (and the appropriate value)
 - [ ] __5:__ Unsuccessful adding of the team returns 400 status and JSON containing the key `message` with an error message as the value.
 - [ ] __10:__ Learner demonstrates POST route functionality using Postman, curl, or the like as a client.
 
@@ -70,7 +71,7 @@ Add a yellow banner across the top of the `team_colors.pug` OR `team_colors.ejs`
 - [ ] __5:__ The background of the banner is yellow
 
 ### DOM Manipulation
-When the user clicks the "Add Color" button, add a new color (entered in the text box) to the list of colors on the page. __Note: There is no need to add the team to the database or communicate with the server in any way.__
+When the user clicks the "Add Color" button, add a new color (entered in the text box) to the list of colors on the page. __Note: There is no need to update the database or communicate with the server in any way.__
 
 - [ ] __10:__ Add event listener to "Add Color" button
 - [ ] __10:__ Add another entry to the color list on the page after button click.

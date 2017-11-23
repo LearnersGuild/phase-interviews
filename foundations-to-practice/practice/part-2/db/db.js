@@ -21,21 +21,20 @@ const getTeamColors = teamName =>
     .then(colors => colors.map(color => color.name))
 
 /**
- * Add a color to the database for the specified team
- * @param {string} teamName Name of the team for which the color needs to be added
- * @param {string} colorName Name of the color
- * @return {Promise} Promise which will be fulfilled with the color data
- *                           if the insert succeeds; rejected if not
+ * Add a team to the database with the provided data
+ * @param {string} teamName Name of the team
+ * @param {string} city Name of the city where team is located
+ * @return {Promise} Promise which will be fulfilled if the insert succeeds; rejected if not
 */
-const addTeamColor = (teamName, colorName) =>
-  db.one('SELECT id FROM teams WHERE name=$1', teamName)
+const addTeam = (teamName, city) =>
+  db.one('SELECT id FROM cities WHERE name=$1', city)
     .then(result => db.oneOrNone(`
-        INSERT INTO colors (name, team_id)
+        INSERT INTO teams (name, city_id)
         VALUES ($1, $2)
-        RETURNING *`,
-      [colorName, result.id]))
+        RETURNING name`,
+      [teamName, result.id]))
 
 module.exports = {
   getTeamColors,
-  addTeamColor,
+  addTeam,
 }
