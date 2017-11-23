@@ -57,8 +57,8 @@ Create a POST route for `/teams/add` that receives JSON data and adds a new team
 - [ ] __5:__ Route uses POST
 - [ ] __10:__ Route accesses POST data
 - [ ] __10:__ Route uses addTeam to add the team to the database
-- [ ] __5:__ Successful adding of the team returns 200 status and JSON with the key `teamName` (and the appropriate value)
-- [ ] __5:__ Unsuccessful adding of the team returns 400 status and JSON containing the key `message` with an error message as the value.
+- [ ] __10:__ Successful adding of the team returns 200 status and JSON with the key `teamName` (and the appropriate value)
+- [ ] __10:__ Unsuccessful adding of the team returns 400 status and JSON containing the key `message` with an error message as the value.
 - [ ] __10:__ Learner demonstrates POST route functionality using Postman, curl, or the like as a client.
 
 ## Part 3: Front-End
