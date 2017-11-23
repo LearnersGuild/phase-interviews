@@ -70,7 +70,7 @@ Add a yellow banner across the top of the `team_colors.pug` OR `team_colors.ejs`
 - [ ] __5:__ The banner spans the entire page width
 - [ ] __5:__ The title is centered within the banner
 - [ ] __5:__ The background of the banner is yellow
-- [ ] __10:__ The styling is defined in the `public/team_colors.css` file (not in the html page)
+- [ ] __10:__ The styling is defined in the `public/team_colors.css` file (not in the HTML file)
 
 ### DOM Manipulation
 When the user clicks the "Add Color" button, add a new color to the list of colors on the page. The new color to be added will be entered in the text box. __Note: There is no need to update the database or communicate with the server in any way.__
@@ -78,3 +78,4 @@ When the user clicks the "Add Color" button, add a new color to the list of colo
 - [ ] __10:__ The "Add Color" button has an event listener on click
 - [ ] __10:__ The color list has another item after button click
 - [ ] __10:__ The new color list item contains the contents of the text input box
+- [ ] __10:__ JavaScript is contained in `public/team_colors.js` (not in the HTML file)
