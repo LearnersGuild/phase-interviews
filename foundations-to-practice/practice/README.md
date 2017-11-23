@@ -4,24 +4,24 @@
 
 - This is intended to give you an idea of the type of tasks you will be asked to do for the live coding interview.
 
-- During the challenge you may:
+- You may choose either Pug or EJS as a template engine (here and in the live coding interview).
 
-  - google search for reference material from the web.
-  - use the command line and/or the browser console to debug your work.
-  - use Postico or psql to examine the database.
-
-- You may choose either pug or ejs as a template engine.
-
-- The live coding interview will have __all the same sections__ as this practice exam, but the __exact tasks will vary__. For example, you may be asked to:
+- The live coding interview will have __all the same sections__ as this practice exam, but the __exact tasks will vary__. For example, you might be asked to:
   - write a different kind of SQL query
   - utilize GET data in the *Express GET Route* section
   - remove an element from the DOM
 
-- Refer to the (TODO: some link here) list of topics covered to understand the possible range of topics.
+- Refer to `extra/topics.md` file in this repo for a list of topics covered to understand the possible range of topics.
 
 - The "subject" of the interview will also be different (for example, hotel reservations instead of sports teams).
 
 - The actual live coding interview will likely have a smaller amount of coding than this practice version.
+
+- During the live coding interview you may:
+
+  - google search for reference material from the web.
+  - use the command line and/or the browser console to debug your work.
+  - use Postico or psql to examine the database.
 
 ## Part 1: SQL
 
