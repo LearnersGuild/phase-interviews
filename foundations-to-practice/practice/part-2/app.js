@@ -1,6 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser');
-const { getAllTeamNames, addTeam } = require('./db/db')
+const { getTeamColors, addTeamColor } = require('./db/db')
 
 const app = express()
 // app.set('view engine', 'pug')

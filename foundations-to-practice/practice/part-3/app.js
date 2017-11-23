@@ -1,17 +1,17 @@
 const express = require('express')
 const bodyParser = require('body-parser');
-const { getAllTeamNames } = require('./db/db')
+const { getTeamColors } = require('./db/db')
 
 const app = express()
 app.use(express.static('public'))
 app.set('view engine', 'pug')
 // app.set('view engine', 'ejs')
 
-app.get('/', (req, res) => {
-  getAllTeamNames()
-    .then((teams) => {
-      res.render('teams.pug', { teams })
-      // res.render('teams.ejs', { teams })
+app.get('/:teamname/colors', (req, res) => {
+  getTeamColors(req.params.teamname)
+    .then((colors) => {
+      console.log('colors::', colors)
+      res.render('team_colors', { colors })
     })
 })
 
