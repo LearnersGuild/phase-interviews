@@ -1,4 +1,4 @@
-# Foundations -> Practice practice challenge
+# Foundations -> Practice Version 1 challenge
 
 __Note__: Be sure to __read and follow the installation instructions__ in the `README.md` for the each *part-x* folder before completing that part.
 
