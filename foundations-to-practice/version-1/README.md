@@ -34,7 +34,7 @@ Create a POST route for `/:recipeId/ingredients/add` that receives JSON data and
 
 - [ ] __5:__ Route uses POST
 - [ ] __10:__ Route accesses POST data
-- [ ] __10:__ Route uses `addRecipeIngredient` to add the team to the database
+- [ ] __10:__ Route uses `addRecipeIngredient` to update to the database
 - [ ] __10:__ Successful adding of the ingredient returns 200 status and JSON with the keys `ingredientId`, `ingredientAmount`, `IngredientUnits` and `recipeId` (and the appropriate values)
 - [ ] __10:__ Unsuccessful adding of the ingredient returns 400 status and JSON containing the key `message` with an error message as the value.
 - [ ] __10:__ Learner demonstrates POST route functionality using Postman, curl, or the like as a client.
