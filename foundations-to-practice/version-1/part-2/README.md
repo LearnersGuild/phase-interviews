@@ -1,4 +1,4 @@
-# Foundations -> Practice practice challenge Scaffold
+# Foundations -> Practice Version 1 Scaffold
 # Part 2: Express
 
 ## To install

@@ -1,4 +1,4 @@
-# Foundations -> Practice practice challenge Scaffold
+# Foundations -> Practice Version 2 Scaffold
 # Part 3: Front-End
 
 ## To install
