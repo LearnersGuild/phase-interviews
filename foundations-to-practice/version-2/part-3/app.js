@@ -1,5 +1,5 @@
 const express = require('express')
-const { getTeamColors } = require('./db/db')
+const { getFlightCounts } = require('./db/db')
 
 const app = express()
 app.use(express.static('public'))
@@ -8,13 +8,14 @@ app.use(express.static('public'))
 
 app.get('/flight_counts', (req, res) => {
   const minFlightCount = req.query.minFlightCount
-  getTeamColors(minFlightCount)
+  getFlightCounts(minFlightCount)
     .then((flightCounts) => {
-      res.render('flights', { minFlightCount, flightCounts })
+      res.render('flight_counts', { minFlightCount, flightCounts })
     })
     .catch((err) => {
-      res.render('flights', { message: `An error occurred: ${err.toString()}` })
+      res.render('flight_counts', { message: `An error occurred: ${err.toString()}` })
     })
+    .catch(console.error)
 })
 
 app.listen(3000, () =>

@@ -13,14 +13,14 @@ INSERT INTO flights (flight_number) VALUES
 
 INSERT INTO passengers (name) VALUES
   ('Michael Jackson'),
-  ('Janet Jackson'),
-  ('LaToya Jackson'),
+  ('Jermaine Jackson'),
+  ('Marlon Jackson'),
   ('Tito Jackson'),
-  ('xxx Jackson'),
+  ('Jackie Jackson'),
   ('Baby Spice'),
   ('Sporty Spice'),
   ('Scary Spice'),
-  ('xxx Spice')
+  ('Posh Spice')
 ;
 
 INSERT INTO flight_passengers (passenger_id, flight_id) VALUES

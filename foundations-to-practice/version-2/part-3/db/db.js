@@ -18,7 +18,8 @@ const getFlightCounts = minFlightCount =>
       JOIN flight_passengers AS fp
       ON p.id = fp.passenger_id
     GROUP BY p.name
-    HAVING COUNT(fp.id) > $1`,
+    HAVING COUNT(fp.id) >= $1
+    ORDER BY COUNT(fp.id)`,
     [minFlightCount])
 
 module.exports = {
