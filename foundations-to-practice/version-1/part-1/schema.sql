@@ -17,6 +17,6 @@ CREATE TABLE recipe_ingredients (
   id SERIAL PRIMARY KEY,
   recipe_id INTEGER REFERENCES recipes,
   ingredient_id INTEGER REFERENCES ingredients,
-  amount INTEGER,
+  amount FLOAT,
   amount_units VARCHAR(8)
 );
