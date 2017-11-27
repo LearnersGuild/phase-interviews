@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "Bonnie Schulkin",
   "scripts": {
+    "db:init": "npm run db:create && npm run db:seed",
     "db:create": "psql < schema.sql",
     "db:seed": "psql < seed.sql"
   },
