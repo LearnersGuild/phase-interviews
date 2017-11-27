@@ -27,9 +27,3 @@ Create a GET route for `/flight_counts` that receives GET data with the key `min
 ## Part 3: Front-End
 
 ### DOM Manipulation
-
-- [ ] __10:__ Each ingredient has a mouseover and a mouseout event listener.
-- [ ] __10:__ The ingredient element is accessed in the callback function from the event listeners.
-- [ ] __10:__ The ingredient element color turns red when moused over.
-- [ ] __10:__ The ingredient element color reverts to black when the mouse is no longer over the element.
-- [ ] __10:__ JavaScript is contained in `public/recipes.js` (not in the HTML file)
