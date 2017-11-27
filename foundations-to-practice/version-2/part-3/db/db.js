@@ -4,22 +4,23 @@ const db = pgp('postgres://localhost/flights')
 db.connect()
 
 /**
- * Get the all colors for the specified team.
- * @param {string} teamName - name of the team for which to get colors
- * @return {Promise} Promise resolving to an array of strings
+ * Get the names and flight counts for passengers having at least the minimum
+ * requested count
+ * @param  {number} minFlightCount Minimum number of flights for a passenger
+ *                                  to be included in results
+ * @return {Promise}              Promise that resolves to an array of objects.
+ *                                  Each object has keys 'name' and 'flightcount'
  */
-const getTeamColors = teamName =>
-  db.any(`
-      SELECT c.name
-      FROM colors AS c
-        JOIN flights AS tc
-          ON c.id = tc.color_id
-        JOIN teams AS t
-          ON t.id = tc.team_id
-      WHERE t.name ILIKE $1
-    `, [teamName])
-    .then(colors => colors.map(color => color.name))
+const getFlightCounts = minFlightCount =>
+  db.query(`
+    SELECT p.name, COUNT(fp.id) AS flightcount
+    FROM passengers AS p
+      JOIN flight_passengers AS fp
+      ON p.id = fp.passenger_id
+    GROUP BY p.name
+    HAVING COUNT(fp.id) > $1`,
+    [minFlightCount])
 
 module.exports = {
-  getTeamColors,
+  getFlightCounts,
 }

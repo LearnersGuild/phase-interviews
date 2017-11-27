@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Version 2 Challenge Part 3</title>
+  </head>
+  <body>
+    <h1>Flight Counts</h1>
+    <h2>For passengers with <%= minFlightCount =%> or more flights</h2>
+    <table id='flight-counts'>
+      <tr>
+        <th>Passenger Name</th>
+        <th>Flight Count</th>
+      </tr>
+      <% for (var passenger of flightCounts) { %>
+        <tr>
+          <td><%= passenger.name %></td>
+          <td><%= passenger.flightcount %></td>
+        </tr>
+      <% } %>
+    </table>
+  </body>
+</html>
