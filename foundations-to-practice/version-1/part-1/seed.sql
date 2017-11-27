@@ -27,6 +27,7 @@ INSERT INTO recipe_ingredients (recipe_id, ingredient_id, amount, amount_units) 
   (1, 2, 0.75, 'cup'),
   (1, 6, 1, 'tsp'),
   (1, 9, 2, ''),
+  (1, 3, 0.5, 'tsps'),
   (2, 5, 1, 'cup'),
   (2, 1, 1, 'cups'),
   (2, 2, 1, 'cup'),
