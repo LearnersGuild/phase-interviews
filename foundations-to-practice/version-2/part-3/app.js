@@ -16,5 +16,5 @@ app.get('/:teamname/colors', (req, res) => {
 })
 
 app.listen(3000, () =>
-  console.log('Playing ball on port 3000!')
+  console.log('Flying high on port 3000!')
 )

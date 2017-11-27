@@ -6,23 +6,23 @@ __Note__: Be sure to __read and follow the installation instructions__ in the `R
 
 ### Node and PostgreSQL
 
-Create a function in `db.js` called `getFlightCounts` that uses `pg-promise`. The function takes a `minFlights` parameter, and returns the names of all passengers who are associated with at least that many flights in the database.
+Create a function in `db.js` called `getFlightCounts` that uses `pg-promise`. The function takes a `minFlightCount` parameter, and returns the names of all passengers who are associated with at least that many flights in the database.
 
   - [ ] __10:__ The function's query returns the name and flight count for passengers in the database.
-  - [ ] __10:__ The function's query returns only the passengers who have a flight count greater than or equal to the `minFlights` parameter.
-  - [ ] __10:__ The function returns a promise which resolves to the result of the query
+  - [ ] __10:__ The function's query returns only the passengers who have a flight count greater than or equal to the `minFlightCount` parameter.
+  - [ ] __10:__ The function returns a promise which resolves to the results of the query
 
 ## Part 2: Express
 
 ### GET route
-Create a GET route for `/flight_counts` that receives GET data with the key `minFlights`, whose value is the minimum number of flights a passenger must have to be displayed on the page. Use the `getFlightCounts` function provided in `db.js` (no modifications need to be made to this function). Example JSON POST data:
+Create a GET route for `/flight_counts` that receives GET data with the key `minFlightCount`, whose value is the minimum number of flights a passenger must have in order to be displayed on the page. Use the `getFlightCounts` function provided in `db.js`.
 
 - [ ] __5:__ Route uses GET
 - [ ] __10:__ Route accesses GET data
-- [ ] __10:__ Route uses `getFlightCounts` to add the team to the database
-- [ ] __10:__ Successful adding of the ingredient returns 200 status and JSON with the keys `ingredientId`, `ingredientAmount`, `IngredientUnits` and `recipeId` (and the appropriate values)
-- [ ] __10:__ Unsuccessful adding of the ingredient returns 400 status and JSON containing the key `message` with an error message as the value.
-- [ ] __10:__ Learner demonstrates GET route functionality using a browser.
+- [ ] __10:__ Route uses `getFlightCounts` to retrieve the passenger data
+- [ ] __10:__ Route displays names and flight counts of passengers returned from `getFlightCounts`
+- [ ] __10:__ If there's an error, the page displays `An error occurred` in the div with the id `message`.
+- [ ] __10:__ Learner demonstrates GET route (non-error) functionality using a browser
 
 ## Part 3: Front-End
 
