@@ -9,7 +9,7 @@ db.connect()
  * @return {Promise}         Promise resolving to a string of the recipe name
  */
 const getRecipeName = recipeId =>
-  db.query('SELECT name FROM recipes WHERE id=$1', [recipeId])
+  db.one('SELECT name FROM recipes WHERE id=$1', [recipeId])
     .then(result => result.name)
 
 /**
@@ -23,7 +23,7 @@ const getRecipeName = recipeId =>
  */
 const getRecipeIngredients = recipeId =>
   db.query(`
-    SELECT i.name AS ingredient_name, ri.amount, ri.amount_name
+    SELECT i.name AS ingredient_name, ri.amount, ri.amount_units
     FROM recipes AS r
       JOIN recipe_ingredients AS ri
         ON r.id = ri.recipe_id
