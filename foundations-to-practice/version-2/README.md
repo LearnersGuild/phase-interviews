@@ -20,16 +20,13 @@ Create a GET route for `/flight_counts` that receives GET data with the key `min
 - [ ] __5:__ Route uses GET
 - [ ] __10:__ Route accesses GET data
 - [ ] __10:__ Route uses `getFlightCounts` to retrieve the passenger data
-- [ ] __10:__ Route displays names and flight counts of passengers returned from `getFlightCounts`
+- [ ] __15:__ Route uses `flight_counts.ejs` or `flight_counts.pug` to display names and flight counts of passengers returned from `getFlightCounts`
 - [ ] __10:__ If there's an error, the page displays `An error occurred` in the div with the id `message`.
 - [ ] __10:__ Learner demonstrates GET route (non-error) functionality using a browser
 
 ## Part 3: Front-End
 
 ### DOM Manipulation
-The `:recipeId/ingredients` route in this section has already been coded to display a recipe name and ingredients for a particular recipe id (try accessing this route with recipe id 1 to see it in action).
-
-The challenge for this section: when the user mouses over an ingredient, the ingredient turns red. When the mouse is no longer over the ingredient, it reverts to black.
 
 - [ ] __10:__ Each ingredient has a mouseover and a mouseout event listener.
 - [ ] __10:__ The ingredient element is accessed in the callback function from the event listeners.
