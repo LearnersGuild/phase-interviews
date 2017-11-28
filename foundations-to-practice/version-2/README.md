@@ -27,3 +27,11 @@ Create a GET route for `/flight_counts` that receives GET data with the key `min
 ## Part 3: Front-End
 
 ### DOM Manipulation
+In this section, the scaffolding has been set up for `flight_counts` as described in Part 2. Choose a template engine (EJS or Pug) in app.js and then access this page with a query string of `minFlightCount=4` to see what's up.
+
+The challenge for this section: when a user clicks the `Get total flights` button, display the total flight count (the sum of the numbers in the "flight count" column of the table) in the span with the id `flight-count-total`.
+
+- [ ] __10:__ The `Get total flights` button has a click event listener.
+- [ ] __10:__ Clicking the button displays a number in the `flight-count-total` div.
+- [ ] __15:__ Clicking the button displays the sum of the numbers in the "flight count" column in the `flight-count-total` div.
+- [ ] __10:__ JavaScript is contained in `public/recipes.js` (not in the HTML file)
