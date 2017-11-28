@@ -15,8 +15,8 @@ Create a function in `db.js` called `addRecipeIngredient` that uses `pg-promise`
 
 For the purposes of this challenge, you can assume an ingredient with the given name _already exists_ in the db. The function should return a promise resolving to the result of the insert query.
 
-  - [ ] __5:__ Function accepts the id of a recipe, the ingredient id, the ingredient amount, and the ingredient units as parameters
-  - [ ] __10:__ The function executes a query which associates the ingredient id, amount and units with the given recipe id
+  - [ ] __5:__ Function accepts the id of a recipe, the ingredient name, the ingredient amount, and the ingredient units as arguments
+  - [ ] __10:__ The function executes a query which associates the ingredient, amount and units with the given recipe id
   - [ ] __10:__ Function returns a promise which resolves to the result of the query
 
 ## Part 2: Express
@@ -26,9 +26,9 @@ Create a POST route for `/:recipeId/ingredients/add` that receives JSON data and
 
 ```
 {
-  "IngredientName": "baking soda",
+  "IngredientName": "chocolate chips",
   "IngredientAmount": 1,
-  "IngredientUnits": "tsp"
+  "IngredientUnits": "cup"
 }
 ```
 
@@ -42,7 +42,7 @@ Create a POST route for `/:recipeId/ingredients/add` that receives JSON data and
 ## Part 3: Front-End
 
 ### DOM Manipulation
-The `:recipeId/ingredients` route in this section has already been coded to display a recipe name and ingredients for a particular recipe id (try accessing this route with recipe id 1 to see it in action).
+The `/:recipeId/ingredients` route in this section has already been coded to display a recipe name and ingredients for a particular recipe id (try accessing this route with recipe id 1 to see it in action).
 
 The challenge for this section: when the user mouses over an ingredient, the ingredient turns red. When the mouse is no longer over the ingredient, it reverts to black.
 
