@@ -5,9 +5,9 @@ CREATE DATABASE recipes;
 
 CREATE TABLE ingredients (
   id SERIAL PRIMARY KEY,
-  name VARCHAR(64)
+  name VARCHAR(64) UNIQUE
 );
-
+ 
 CREATE TABLE recipes (
   id SERIAL PRIMARY KEY,
   name VARCHAR(64) UNIQUE
