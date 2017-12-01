@@ -24,14 +24,15 @@ __Notes__:
 __Specifications__:
 
   - [ ] __5:__ The function accepts the id of a recipe, the ingredient name, the ingredient amount, and the ingredient units as arguments
-  - [ ] __10:__ The function executes a query which gets the ingredient id for the given ingredient name
-  - [ ] __10:__ The function executes another query which associates the ingredient id, amount and units with the given recipe id
+  - [ ] __15:__ The function executes a query which gets the ingredient id for the given ingredient name
+  - [ ] __15:__ The function executes another query which associates the ingredient id, amount and units with the given recipe id
+  - [ ] __10:__ After the function runs, there is a new entry in the recipe_ingredients table from the provided data
   - [ ] __10:__ The function returns a promise which resolves to the result of the insert query
 
 ## Part 2: Express
 
 ### POST route
-Create a POST route for `/:recipeId/ingredients/add` that receives JSON data and adds a new team to the database. Use the `addRecipeIngredient` function provided in `db.js` (no modifications need to be made to this function). Example JSON POST data:
+Create a POST route for `/:recipeId/ingredients/add` that receives JSON data and adds a new ingredient to a recipe in the database. Use the `addRecipeIngredient` function provided in `db.js` (no modifications need to be made to this function). Example JSON POST data:
 
 ```
 {
@@ -44,8 +45,8 @@ Create a POST route for `/:recipeId/ingredients/add` that receives JSON data and
 - [ ] __5:__ Route uses POST
 - [ ] __10:__ Route accesses POST data
 - [ ] __10:__ Route uses `addRecipeIngredient` to update to the database
-- [ ] __10:__ Successful adding of the ingredient returns 200 status and JSON with the keys `ingredientId`, `ingredientAmount`, `ingredientUnits` and `recipeId` (and the appropriate values)
-- [ ] __10:__ Unsuccessful adding of the ingredient returns 400 status and JSON containing the key `message` with an error message as the value.
+- [ ] __10:__ Successful addition of the ingredient to the recipe returns 200 status and JSON with the keys `ingredientId`, `recipeId`, `ingredientAmount` and `ingredientUnits` (and the appropriate values)
+- [ ] __10:__ Unsuccessful addition of the ingredient to the recipe returns 400 status and JSON containing the key `message` with an error message as the value.
 - [ ] __10:__ Learner demonstrates POST route functionality using Postman, curl, or the like as a client.
 
 ## Part 3: Front-End
@@ -53,9 +54,11 @@ Create a POST route for `/:recipeId/ingredients/add` that receives JSON data and
 ### DOM Manipulation
 The `/:recipeId/ingredients` route in this section has already been coded to display a recipe name and ingredients for a particular recipe id. You will need to uncomment the line using your chosen template (Pug or EJS) before the server will work. Try accessing this route with recipe id 2 now to see it in action.
 
-The challenge for this section: when the user mouses over an ingredient, the ingredient turns red. When the mouse is no longer over the ingredient, it reverts to black.
+The challenge for this section: when the user mouses over an ingredient, the ingredient background turns light gray. When the mouse is no longer over the ingredient, the background reverts to white.
 
-- [ ] __10:__ Each ingredient has a mouseover and a mouseout event listener.
+Feel free to use vanilla JS or JQuery. The JQuery CDN link has already been included in the HTML.
+
+- [ ] __10:__ Each ingredient has the appropriate event listener(s).
 - [ ] __10:__ The ingredient element is accessed in the callback function from the event listeners.
 - [ ] __10:__ The ingredient element background color turns light gray (#eee) when moused over.
 - [ ] __10:__ The ingredient element background color reverts to white when the mouse is no longer over the element.

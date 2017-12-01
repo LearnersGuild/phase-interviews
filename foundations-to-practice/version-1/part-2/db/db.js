@@ -15,9 +15,10 @@ db.connect()
  */
 const addRecipeIngredient = (recipeId, ingredientName, ingredientAmount, ingredientUnits) =>
   db.one('SELECT id FROM ingredients WHERE name ILIKE $1', [ingredientName])
-    .then(result => db.query(`
+    .then(result => db.one(`
       INSERT INTO recipe_ingredients (recipe_id, ingredient_id, amount, amount_units)
       VALUES ($1, $2, $3, $4)
+      RETURNING *
     `, [recipeId, result.id, ingredientAmount, ingredientUnits]))
 
 module.exports = {
